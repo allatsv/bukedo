@@ -1,0 +1,279 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+  display: block;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+@font-face {
+  font-family: "PT Root UI";
+  src: url(font/PT-Root-UI_Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: url(font/PT-Root-UI_Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: url(font/PT-Root-UI_Bold.ttf);
+  font-weight: 700;
+}
+.container {
+  width: 1296px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "PT Root UI";
+  font-weight: 400;
+  color: #1C1C1D;
+}
+
+.main-btn {
+  padding: 14.5px 35px;
+  border-radius: 12px;
+  background-color: #AD2950;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20.8px;
+  font-weight: 700;
+}
+
+.connect-info {
+  margin-left: 10px;
+}
+.connect-title {
+  font-size: 16px;
+  line-height: 20.8px;
+  font-weight: 500;
+  color: #1C1C1D;
+}
+.connect-descrip {
+  font-size: 12px;
+  line-height: 15.6px;
+  color: #93949B;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #F5F5F5;
+  position: relative;
+}
+.footer .imgs img:first-child {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+}
+.footer .imgs img:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.footer .imgs img:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer .imgs img:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  left: 44%;
+}
+.footer .imgs img:nth-child(5) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.footer .imgs img:last-child {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.footer__inner {
+  padding: 48px 0;
+}
+.footer__top {
+  display: flex;
+  padding-bottom: 48px;
+}
+.footer__info {
+  padding-right: 244px;
+}
+.footer__info-descrip {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  padding: 49px 0 12px 0;
+}
+.footer__nav {
+  padding-right: 118px;
+}
+.footer__nav-title {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+.footer__nav-lists {
+  display: flex;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+}
+.footer__nav-list {
+  max-width: 526px;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+.footer__nav-item {
+  padding-bottom: 16px;
+}
+.footer__nav-item a {
+  color: #1C1C1D;
+}
+.footer__nav-item:last-child {
+  padding-bottom: 0;
+}
+.footer__connect-title {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+.footer__connect-blocks {
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  flex-wrap: wrap;
+  max-width: 306px;
+  max-height: 137px;
+}
+.footer__connect-block {
+  display: flex;
+  padding-bottom: 16px;
+}
+.footer__connect-block:first-child a {
+  display: flex;
+  align-items: flex-start;
+}
+.footer__connect-block:first-child {
+  width: 153px;
+}
+.footer__connect-block:nth-child(3) {
+  width: 153px;
+}
+.footer__connect-whatsapp {
+  padding: 8px;
+  border-radius: 50%;
+  background-color: #29A71A;
+  height: 30px;
+}
+.footer__connect-telegram {
+  padding: 8.95px 8px 8.95px 8px;
+  border-radius: 50%;
+  background-color: #23B7EC;
+  height: 30px;
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 32px;
+  border-top: 1px solid #CFCFCF;
+}
+.footer__pay {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.footer__copy {
+  font-size: 16px;
+  line-height: 20.8px;
+  color: #93949B;
+}/*# sourceMappingURL=style.css.map */
