@@ -1,0 +1,128 @@
+.delivery {
+  margin: 100px 0;
+}
+.delivery .main-title {
+  padding-bottom: 32px;
+  text-align: center;
+}
+.delivery__decrip {
+  font-size: 24px;
+  line-height: 31.2px;
+  padding-bottom: 32px;
+  text-align: center;
+}
+.delivery__info {
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 79px;
+       column-gap: 79px;
+}
+.delivery__img {
+  width: 526px;
+  height: 487.29px;
+  background: url("../assets/img/paymentdelivery2.png");
+  margin-top: 143.35px;
+}
+.delivery__questions-item {
+  padding: 25px 25px 25px 24px;
+  background-color: #F5F5F5;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  width: 636px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+.delivery__questions-item--display {
+  background-color: #fff;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0px 4px 6px -2px rgba(18, 18, 23, 0.0509803922);
+  box-shadow: 0px 10px 15px -3px rgba(18, 18, 23, 0.0784313725);
+}
+.delivery__questions-item:last-child {
+  margin-bottom: 0;
+}
+.delivery__questions-question {
+  font-size: 22px;
+  line-height: 28.6px;
+  font-weight: 500;
+}
+.delivery__questions-answer {
+  font-size: 16px;
+  line-height: 20.8px;
+  padding-top: 24px;
+}
+.delivery__questions-answer--display {
+  display: none;
+}
+.delivery__questions-minus--display {
+  display: none;
+}
+
+/* PAYMENT */
+.payment {
+  padding: 32px 0 100px 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+.payment .main-title {
+  padding-bottom: 24px;
+  text-align: center;
+}
+.payment__inner {
+  padding: 48px 48px 36px 48px;
+  background-color: #F5F5F5;
+  border-radius: 24px;
+}
+.payment__how {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 202px;
+       column-gap: 202px;
+  padding: 48px 110px;
+  background-color: #fff;
+  border-radius: 24px;
+}
+.payment__how-info {
+  max-width: 478px;
+}
+.payment__how-title {
+  font-size: 22px;
+  line-height: 28.6px;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+.payment__how-list {
+  font-size: 16px;
+  line-height: 20.8px;
+}
+.payment__how-item {
+  padding-bottom: 15px;
+}
+.payment__how-item:last-child {
+  padding-bottom: 0;
+}
+.payment__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+.payment__block {
+  padding: 24px 24px 48px 24px;
+  background-color: #fff;
+  border-radius: 16px;
+  width: 282px;
+  margin-bottom: 24px;
+}
+.payment__block-title {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  padding-bottom: 16px;
+  max-width: 234px;
+}
+.payment__block-info {
+  font-size: 14px;
+  line-height: 18.2px;
+  max-width: 234px;
+}/*# sourceMappingURL=paymentdelivery.css.map */
