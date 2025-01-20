@@ -1,0 +1,177 @@
+@import "./vars";
+
+.corporate {
+    .main-title {
+        padding-bottom: 48px;
+        text-align: center;
+    }
+    &__delivery {
+        padding: 96px 770px 96px 110px;
+        border-radius: 24px;
+        background-color: $grayBG;
+        position: relative;
+        &-img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-height: 348px;
+            border-bottom-right-radius: 24px;
+            border-top-right-radius: 24px;
+        }
+        &-title {
+            font-size: 32px;
+            line-height: 41.6px;
+            font-weight: 500;
+            padding-bottom: 32px;
+        }
+        &-info {
+            font-size: 16px;
+            line-height: 20.8px;
+            max-width: 416px;
+        }
+    }
+    &__settlement {
+        padding: 60.5px 660px 60.5px 110px;
+        border-radius: 24px;
+        background-color: $grayBG;
+        position: relative;
+        &-title {
+            font-size: 32px;
+            line-height: 41.6px;
+            font-weight: 500;
+            max-width: 526px;
+            padding-bottom: 32px;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 20.8px;
+            max-width: 526px;
+        }
+        &-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-top-right-radius: 24px;
+            border-bottom-right-radius: 24px;
+        }
+    }
+    &__how {
+        display: flex;
+        justify-content: space-between;
+        margin: 96px 0 105px 0;
+        &-title {
+            font-size: 32px;
+            line-height: 41.6px;
+            font-weight: 500;
+            max-width: 303px;
+            padding-top: 21px;
+        }
+        &-list {
+            font-size: 16px;
+            line-height: 20.8px;
+            max-width: 636px;
+        }
+    }
+    &__stylish {
+        position: relative;
+        padding: 131.5px 387px;
+        background-color: $grayBG;
+        border-radius: 24px;
+        text-align: center;
+        &-title {
+            font-size: 32px;
+            line-height: 41.6px;
+            font-weight: 500;
+            padding-bottom: 32px;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 20.8px;
+        }
+        &-img {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-bottom-right-radius: 24px;
+            border-bottom-left-radius: 24px;
+        }
+    }
+    &__contact {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        &-block {
+            padding: 32px 24px;
+            border: 1px solid #DADADA;
+            border-radius: 16px;
+            width: 306px;
+            margin-bottom: 24px;
+        }
+        &-block:first-child {
+            width: 636px;
+        }
+        &-block:nth-child(4) {
+            width: 636px;
+            margin-bottom: 0;
+            .corporate__contact-text {
+                max-width: 368px;
+                line-height: 26.8px;
+            }
+        }
+        &-block:last-child {
+            width: 636px;
+            height: 312.48px;
+            display: flex;
+            column-gap: 24px;
+            margin-bottom: 0;
+            .corporate__contact-text {
+                font-size: 12px;
+                line-height: 15.6px;
+                max-width: 272px;
+                padding-bottom: 20.74px;
+            }
+        }
+        &-title {
+            font-size: 22px;
+            line-height: 28.6px;
+            font-weight: 500;
+            padding-bottom: 24px;
+        }
+        &-flex {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 8px;
+        }
+        &-flex:last-child {
+            padding-bottom: 24px;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 20.8px;
+            max-width: 258px;
+        }
+        &-text span {
+            font-weight: 500;
+        }
+        &-hours {
+            font-size: 18px;
+            line-height: 23.4px;
+            font-weight: 500;
+            padding-bottom: 8px;
+        }
+        &-email {
+            font-size: 22px;
+            line-height: 28.6px;
+            font-weight: 700;
+            padding-top: 84px;
+        }
+        &-img {
+            width: 282px;
+            height: 248.48px;
+        }
+        .main-btn {
+            max-width: 196px;
+            white-space: nowrap;
+        }
+    }
+}

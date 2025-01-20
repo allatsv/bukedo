@@ -1,0 +1,45 @@
+@import "./vars";
+
+
+.system {
+    margin: 48px 0 100px 0;
+    .main-title {
+        text-align: center;
+        padding-bottom: 48px;
+    }
+    &__decrip {
+        font-size: 18px;
+        line-height: 23.4px;
+        padding-bottom: 32px;
+        max-width: 922px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &__blocks {
+        display: flex;
+        justify-content: center;
+        column-gap: 109px;
+    }
+    &__block {
+        padding: 43.5px 32px 43.5px 24px;
+        background-color: $grayBG;
+        border-radius: 24px;
+        text-align: center;
+        &-img {
+            width: 250px;
+            height: 250px;
+            background: url("../assets/img/bonussystem1.png");
+        }
+        &-title {
+            font-size: 32px;
+            line-height: 41.6px;
+            font-weight: 500;
+            padding-bottom: 16px;
+        }
+        &-info {
+            font-size: 18px;
+            line-height: 23.4px;
+            max-width: 258px;
+        }
+    }
+}
