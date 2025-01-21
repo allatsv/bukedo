@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useState, useRef} from 'react'
+import {useClickOutside} from './../scripts/useClickOutside.js'
 import cart from "./../assets/icon/cart.svg"
 import userHeader from "./../assets/icon/user.svg"
 import like from "./../assets/icon/like.svg"
@@ -25,7 +26,6 @@ import list from "./../assets/icon/list.svg"
 import search from "./../assets/icon/search.svg"
 import whatsapp from "./../assets/icon/whatsapp.svg"
 import telegram from "./../assets/icon/telegram.svg"
-import qa from './../scripts/burger.js';
 import close from "./../assets/icon/close.svg";
 import right from "./../assets/icon/right.svg"
 
@@ -34,6 +34,12 @@ import right from "./../assets/icon/right.svg"
 
 
 const Header = () => {
+    const [isOpen, setOpen] = useState(false);
+  const menuRef = useRef(null);
+  useClickOutside(menuRef, () => {
+    if (isOpen) {setTimeout(() => setOpen(false), 50);} ;
+  });
+
     return (
         <header className="header">
             <div className="header__hrs">
@@ -87,9 +93,9 @@ const Header = () => {
                         </nav>
                     </div>
                     <div className="header__bottom">
-                        <div style={{display: "none"}} className="catalog-list">
+                        <div  className={`catalog-list  ${isOpen ? "active" : ""} `}  ref={menuRef}>
                             <div className="container">
-                                <div className="catalog-list__inner">
+                                <div className='catalog-list__inner'>
                                     <div className="catalog-list__column">
                                         <ul className='catalog-list__category'>
                                             <a href=""><li className='catalog-list__category-item'>Букеты</li></a>
@@ -251,7 +257,7 @@ const Header = () => {
                             </div>
                         </div>
                         
-                        <div style={{display: "none"}} className="city-delivery">
+                        <div  className="city-delivery">
                             <div className="container">
                                 <div className="city-delivery__inner">
                                     <h4 className="city-delivery__title">
@@ -329,7 +335,7 @@ const Header = () => {
                         </div>
 
                         <a href="#"><img src={logo} alt="logo" className="logo" /></a>
-                        <button className="main-btn">
+                        <button onClick={() => {setOpen(!isOpen);} } className="main-btn">
                             <img src={list} alt="list" />
                             <span>Каталог</span>
                         </button>

@@ -1,6 +1,7 @@
 @import "./vars";
 
 .header {
+    position: fixed;
     .connect-descrip {
         font-size: 13px;
         line-height: 16.9px;
@@ -240,7 +241,19 @@
 }
 
 .catalog-list {
-    
+    background-color: white;
+    border-radius: 16px;
+    z-index: 10;
+        top: 160px;
+    opacity: 0;
+    transform: translateY(-10px);
+  visibility: hidden;
+  transition: 0.3s;
+  position: absolute;
+  box-shadow: 0px 20px 65px -5px #1212170A;
+  padding-left: 32px;
+
+
     &__inner{
         
        
@@ -313,6 +326,13 @@
 }
 
 .city-delivery {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+  visibility: hidden;
+  transition: 0.3s;
     &__inner {
         padding: 20px 20px 32px 32px;
         border-radius: 16px;
@@ -389,3 +409,9 @@
     border: 1px solid #E5E7EB;
     border-radius: 12px;
 }
+
+.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
