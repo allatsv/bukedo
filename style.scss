@@ -170,6 +170,110 @@ body {
     background-color: #fff;
 }
 
+/* ABOUT-COMPANY */
+
+.about-company {
+    .main-title {
+        padding-bottom: 48px;
+    }
+    &__inner {
+        margin: 32px 0 100px 0;
+    }
+    &__how {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 134px;
+    }
+    &__info {
+        max-width: 526px;
+    }
+    &__info h4 {
+        font-size: 32px;
+        line-height: 41.6px;
+        font-weight: 500;
+        padding-bottom: 48px;
+    }
+    &__info p {
+        font-size: 16px;
+        line-height: 20.8px;
+        padding-bottom: 24px;
+    }
+    &__info p:last-child {
+        padding-bottom: 0;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        padding: 24px;
+        background-color: $grayBG;
+        border-radius: 24px;
+        margin-bottom: 24px;
+    }
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+    &__item h5 {
+        font-size: 22px;
+        line-height: 28.6px;
+        font-weight: 700;
+        padding-bottom: 16px;
+    }
+    &__item p {
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+}
+
+/* AGREEMENT */
+
+.agreement {
+    .main-title {
+        text-align: center;
+    }
+    margin: 48px 0 100px 0;
+    &__container {
+        width: 856px;
+        margin: 0 auto;
+    }
+    &__inner p {
+        font-size: 16px;
+        line-height: 22.4px;
+        padding-bottom: 16px;
+    }
+    &__inner span {
+        text-decoration: underline;
+    }
+    &__main p:first-child {
+        padding-top: 40px;
+    }
+    &__main p:last-child {
+        padding-bottom: 24px;
+    }
+    &__term p:last-child {
+        padding-bottom: 48px;
+    }
+    &__term h4 {
+        font-size: 22px;
+        line-height: 33px;
+        font-weight: 700;
+        text-align: center;
+        padding-bottom: 24px;
+    }
+    &__agreement p:first-child {
+        padding-top: 32px;
+    }
+    &__agreement p:last-child {
+        padding-bottom: 48px;
+    }
+    &__site p:first-child {
+        padding-top: 32px;
+    }
+    &__site p:last-child {
+        padding-bottom: 0;
+    }
+}
+
 /* ORDER-PAYMENT */
 
 .order-payment {
