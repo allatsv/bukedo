@@ -9,6 +9,8 @@ import './scss/footer.scss';
 import './scss/agreement.scss';
 import './scss/aboutCompany.scss'
 import './scss/orderPayment.scss'
+import './scss/card.scss'
+import './scss/catalog.scss'
 import App from './App';
 
 

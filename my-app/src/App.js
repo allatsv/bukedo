@@ -1,11 +1,12 @@
 
 import { Header } from './components';
 import { Footer } from './components';
-import { Corporate,Bonussystem,Paymentdelivery, Agreement, AboutCompany, OrderPayment } from './pages';
+import { Corporate,Bonussystem,Paymentdelivery, Agreement, AboutCompany, OrderPayment, Catalog } from './pages';
 function App() {
   return (
     <div className="App">
         <Header/>
+          <Catalog/>
           <Agreement/>
           <Corporate/>
           <Bonussystem/>

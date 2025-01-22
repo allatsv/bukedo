@@ -4,3 +4,4 @@ export { default as Paymentdelivery } from './Paymentdelivery';
 export { default as Agreement } from './Agreement';
 export { default as AboutCompany } from './AboutCompany';
 export { default as OrderPayment } from './OrderPayment';
+export { default as Catalog } from './Catalog';
