@@ -6,7 +6,11 @@ import './scss/corporate.scss';
 import './scss/bonussystem.scss';
 import './scss/paymentdelivery.scss';
 import './scss/footer.scss';
+import './scss/agreement.scss';
+import './scss/aboutCompany.scss'
+import './scss/orderPayment.scss'
 import App from './App';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

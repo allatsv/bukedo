@@ -1,14 +1,17 @@
 
 import { Header } from './components';
 import { Footer } from './components';
-import { Corporate,Bonussystem,Paymentdelivery } from './pages';
+import { Corporate,Bonussystem,Paymentdelivery, Agreement, AboutCompany, OrderPayment } from './pages';
 function App() {
   return (
     <div className="App">
         <Header/>
+          <Agreement/>
           <Corporate/>
           <Bonussystem/>
-          <Paymentdelivery/>
+          <Paymentdelivery/> 
+          <AboutCompany/>
+          <OrderPayment/>
         <Footer/>
     </div>
   );

@@ -1,19 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+import React from 'react'
 
-    <link rel="stylesheet" href="style.css">
+import close from "./../assets/icon/close.svg";
+import sbpcolor from "./../assets/icon/sbp-color.svg";
+import card from "./../assets/icon/card.svg";
+import yandex from "./../assets/icon/yandexpay.svg";
+import tinkoff from "./../assets/icon/tinkoffpay.svg";
+import sber from "./../assets/icon/sberpay.svg";
+import umoney from "./../assets/icon/umoney.svg";
+import wallet from "./../assets/icon/walleticon.svg";
+import cardicon from "./../assets/icon/cardicon.svg";
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-</head>
-<body>
-    <div class="order-payment">
+function OrderPayment () {
+    return (
+        <div class="order-payment">
         <div class="container">
             <div class="order-payment__inner">
-                <img src="icon/close.svg" alt="close" class="order-payment__close">
+                <img src={close} alt="close" class="order-payment__close"/>
                 <h4 class="order-payment__title">Оплата заказа</h4>
                 <div class="order-payment__entity">
                     <button class="order-payment__entity-btn order-payment__entity-btn--active">Физ лицо</button>
@@ -23,37 +25,37 @@
                     <h5 class="order-payment__pretitle">Способы оплаты</h5>
                     <div class="order-payment__ways-btns">
                         <button class="order-payment__ways-btn order-payment__ways-btn--active">
-                            <img src="icon/sbp-color.svg" alt="sbp">
+                            <img src={sbpcolor} alt="sbp"/>
                             <span>Система быстрых платежей</span>
                         </button>
                         <button class="order-payment__ways-btn">
-                            <img src="icon/card.svg" alt="cart">
+                            <img src={card} alt="card"/>
                             <span>Банковская карта</span>
                         </button>
                     </div>
                     <div class="order-payment__ways-othersbtn">
                         <button class="order-payment__ways-btn">
-                            <img src="icon/yandexpay.svg" alt="cart">
+                            <img src={yandex} alt="yandex"/>
                             <span>Яндекс Pay</span>
                         </button>
                         <button class="order-payment__ways-btn">
-                            <img src="icon/tinkoffpay.svg" alt="cart">
+                            <img src={tinkoff} alt="tinkoff"/>
                             <span>Tinkoff Pay</span>
                         </button>
                         <button class="order-payment__ways-btn">
-                            <img src="icon/sberpay.svg" alt="cart">
+                            <img src={sber} alt="sber"/>
                             <span>Sber Pay</span>
                         </button>
                         <button class="order-payment__ways-btn">
-                            <img src="icon/umoney.svg" alt="cart">
+                            <img src={umoney} alt="umoney"/>
                             <span>ЮMoney</span>
                         </button>
                         <button class="order-payment__ways-btn">
-                            <img src="icon/walleticon.svg" alt="cart">
+                            <img src={wallet} alt="cash"/>
                             <span>Наличными в магазине</span>
                         </button>
                         <button class="order-payment__ways-btn">
-                            <img src="icon/cardicon.svg" alt="cart">
+                            <img src={cardicon} alt="cash"/>
                             <span>Наличными курьеру</span>
                         </button>
                     </div>
@@ -71,7 +73,7 @@
             </div>
 
             <div class="order-payment__inner">
-                <img src="icon/close.svg" alt="close" class="order-payment__close">
+                <img src={close} alt="close" class="order-payment__close"/>
                 <h4 class="order-payment__title">Оплата заказа</h4>
                 <div class="order-payment__entity">
                     <button class="order-payment__entity-btn">Физ лицо</button>
@@ -82,22 +84,22 @@
                     <p class="order-payment__create-descrip">Выберите заказы для которых создать счет</p>
                     <div class="order-payment__create-checks">
                         <div class="order-payment__create-check">
-                            <input type="checkbox" id="check">
+                            <input type="checkbox" id="check"/>
                             <label for="check">№12133</label>
                         </div>
                         <div class="order-payment__create-check">
-                            <input type="checkbox" id="check">
+                            <input type="checkbox" id="check"/>
                             <label for="check">№1223</label>
                         </div>
                     </div>
                     <h5 class="order-payment__pretitle">Компания</h5>
-                    <input placeholder="Название юр. лица" type="text" class="order-payment__create-input">
-                    <input placeholder="ИНН" type="text" class="order-payment__create-input">
-                    <input placeholder="КПП (Для ИП оставьте пустым)" type="text" class="order-payment__create-input">
-                    <input placeholder="Email (для отправки акта выполненых услуг)" type="email" class="order-payment__create-input">
+                    <input placeholder="Название юр. лица" type="text" class="order-payment__create-input"/>
+                    <input placeholder="ИНН" type="text" class="order-payment__create-input"/>
+                    <input placeholder="КПП (Для ИП оставьте пустым)" type="text" class="order-payment__create-input"/>
+                    <input placeholder="Email (для отправки акта выполненых услуг)" type="email" class="order-payment__create-input"/>
                     <div class="order-payment__notification">
                         <div class="order-payment__create-check">
-                            <input type="checkbox" id="check">
+                            <input type="checkbox" id="check"/>
                             <label for="check">Уведомление мной прочитано, оплатить можно заранее, т.к. зачисление денежных средств происходит от 1 до 3 дней</label>
                         </div>
                     </div>
@@ -113,5 +115,7 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+    )
+}
+
+export default OrderPayment;
