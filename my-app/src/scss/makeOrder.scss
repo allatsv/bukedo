@@ -1,0 +1,137 @@
+@import "./vars";
+
+.make-order {
+    &__inner {
+        display: flex;
+        column-gap: 244px;
+        justify-content: space-between;
+    }
+    &__btns {
+        display: flex;
+        column-gap: 16px;
+        padding-bottom: 40px;
+    }
+    &__checkbox {
+        display: flex;
+        column-gap: 32px;
+        font-size: 16px;
+        line-height: 20.8px;
+        &-fake {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 1px solid $pink;
+            border-radius: 50%;
+            position: relative;
+            margin-right: 12px;
+        }
+        &-fake::before {
+            content: "";
+            display: block;
+            width: 14px;
+            height: 14px;
+            background-color: $pink;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: .2s;
+        }
+        &-input {
+            display: none;
+        }
+        &-input:checked + &-fake::before {
+            opacity: 1;
+        }
+    }
+    &__inputs {
+        &-title {
+            font-size: 16px;
+            line-height: 20.8px;
+            font-weight: 500;
+            padding-bottom: 12px;
+        }
+        &-city {
+            position: relative;
+            padding-bottom: 24px;
+        }
+        &-city input {
+            width: 636px;
+            height: 50px;
+            border: 1px solid $grayText;
+            border-radius: 12px;
+            padding-left: 24px;
+            font-size: 16px;
+            line-height: 20.8px;
+        }
+        &-city input::placeholder {
+            color: $grayText;
+        }
+    }
+    &__date {
+        display: flex;
+        column-gap: 24px;
+        &-title {
+            font-size: 18px;
+            line-height: 23.4px;
+            font-weight: 700;
+            padding-bottom: 18px;
+        }
+        &-fake {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 1px solid $grayText;
+            border-radius: 8px;
+            position: relative;
+            margin-right: 12px;
+        }
+        &-fake::before {
+            content: "";
+            display: block;
+            width: 14px;
+            height: 14px;
+            background-color: $grayText;
+            border-radius: 8px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: .2s;
+        }
+        &-input {
+            display: none;
+        }
+        &-input:checked + &-fake::before {
+            opacity: 1;
+        }
+        &-span {
+            font-size: 16px;
+            line-height: 20.8px;
+        }
+    }
+    &__tell {
+        padding-bottom: 48px;
+        &-title {
+            font-size: 18px;
+            line-height: 23.4px;
+            font-weight: 700;
+            padding-bottom: 18px;
+        }
+    }
+    &__tell input {
+        width: 306px;
+        height: 50px;
+        padding-left: 24px;
+        border: 1px solid $grayText;
+        border-radius: 12px;
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+    &__tell input::placeholder {
+        color: $grayText;
+    }
+}

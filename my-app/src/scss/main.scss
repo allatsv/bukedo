@@ -122,6 +122,17 @@ body {
     font-weight: 700;
     color: $pink;
 }
+.btn-gray {
+    padding: 14.5px 24px;
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+    font-size: 16px;
+    line-height: 20.8px;
+    font-weight: 500;
+    &--active {
+        border: 1px solid #AD2950;
+    }
+}
 .main-title {
     font-size: 42px;
     line-height: 54.6px;
