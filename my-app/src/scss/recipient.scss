@@ -1,6 +1,18 @@
 @import "./vars";
-
+.input-inner{
+    position: relative;
+    svg{
+        position: absolute;
+        top: 16px;
+        right: 26px;
+    }
+}
+.calendar-svg{
+    top: 10px !important;
+    right: 18px !important;
+}
 .recipient {
+    
     &__inner {
         display: flex;
         column-gap: 244px;

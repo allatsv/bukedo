@@ -11,6 +11,8 @@ import './scss/aboutCompany.scss'
 import './scss/orderPayment.scss'
 import './scss/card.scss'
 import './scss/catalog.scss'
+import './scss/recipient.scss'
+import './scss/makeOrder.scss'
 import App from './App';
 
 

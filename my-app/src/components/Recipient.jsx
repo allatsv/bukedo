@@ -1,10 +1,11 @@
+import React from "react";
 import block1 from "./../assets/img/flower-item.png";
-import block2 from "./../assets/img/photo1.png";
+import block2 from "./../assets/img/photo1.jpg";
 import block3 from "./../assets/img/rafaello.png";
-import question from "./../assets/icon/question.icon";
-import minus from "./../assets/icon/minus.icon";
-import plus from "./../assets/icon/plus.icon";
-import count from "./../assets/icon/count.icon";
+import question from "./../assets/icon/question.svg";
+import minus from "./../assets/icon/minus.svg";
+import plus from "./../assets/icon/plus.svg";
+import count from "./../assets/icon/count.svg";
 
 function Recipient () {
     return (
@@ -115,3 +116,4 @@ function Recipient () {
         </section>
     )
 }
+export default Recipient
