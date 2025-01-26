@@ -12,7 +12,11 @@
     right: 18px !important;
 }
 .recipient {
-    
+    .main-btn {
+        width: 306px;
+        height: 65px;
+        text-align: center;
+    }
     &__inner {
         display: flex;
         column-gap: 244px;
@@ -21,11 +25,13 @@
     &__person {
         display: flex;
         column-gap: 24px;
+        padding-bottom: 24px;
     }
     &__person input {
         width: 306px;
         height: 50px;
         border: 1px solid $grayText;
+        border-radius: 12px;
         padding-left: 24px;
         font-size: 16px;
         line-height: 20.8px;
@@ -34,37 +40,41 @@
         color: $grayText;
     }
     &__cards {
-        padding: 24px 0 48px 0;
+        padding-bottom: 48px;
+        textarea {
+            width: 636px;
+            height: 94px;
+            padding: 0 24px;
+            font-size: 16px;
+            line-height: 20.8px;
+            border: 1px solid $grayText;
+            border-radius: 12px;
+            padding-top: 16px;
+            outline: none;
+        }
+        textarea::placeholder {
+            color: $grayText;
+        }
         &-counter {
             display: flex;
             column-gap: 5px;
             padding-bottom: 16px;
-            &-text {
-                font-size: 16px;
-                line-height: 20.8px;
-                color: $grayText;
-                max-width: 68px;
-                padding-right: 11px;
-            }
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 20.8px;
+            color: $grayText;
+            padding-right: 11px;
         }
         &-counter button {
             padding: 11px;
             background-color: $grayBG;
             border-radius: 10px;
+            width: 40px;
         }
         &-count {
             padding: 9.5px 17px;
         }
-    }
-    &__cards input {
-        width: 636px;
-        height: 94px;
-        padding-left: 24px;
-        font-size: 16px;
-        line-height: 20.8px;
-    }
-    &__cards input::placeholder {
-        color: $grayText;
     }
     &__email {
         padding-bottom: 48px;
@@ -95,7 +105,7 @@
             font-weight: 700;
             padding-bottom: 18px;
         }
-        input {
+        textarea {
             width: 636px;
             height: 94px;
             padding-left: 24px;
@@ -103,12 +113,50 @@
             border-radius: 12px;
             font-size: 16px;
             line-height: 20.8px;
+            padding-top: 16px;
+            outline: none;
         }
     }
-    &__special input {
+    &__special textarea::placeholder {
         color: $grayText;
     }
-    &__agree {
-        padding-top: 24px;
+    &__check {
+        padding-bottom: 16px;
+        display: flex;
+        column-gap: 12px;
+        &-agree {
+            padding: 24px 0 0 0 !important;
+        }
+        img {
+            margin-left: 6px;
+        }
+        input {
+            appearance: none;
+            -webkit-appearance: none;
+            height: 24px;
+            width: 24px;
+            border-radius: 8px;
+            background-color: $pink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        label {
+            font-size: 16px;
+            line-height: 20.8px;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    &__check input:after {
+        content: url(./../assets/icon/check.svg);
+        display: none;
+    }
+    &__check input:checked:after {
+        display: block;
+    }
+    &__check:last-child {
+        padding-bottom: 24px;
     }
 }

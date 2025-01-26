@@ -66,6 +66,10 @@ label{
     margin-bottom: 24px;
 }
 .make-order {
+    .main-btn {
+        width: 306px;
+        height: 65px;
+    }
     &__inner {
         display: flex;
         column-gap: 244px;
@@ -162,38 +166,31 @@ label{
             font-weight: 700;
             padding-bottom: 18px;
         }
-        &-fake {
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-            border: 1px solid $grayText;
-            border-radius: 8px;
-            position: relative;
-            margin-right: 12px;
+        &-check {
+            display: flex;
+            column-gap: 12px;
+            input {
+                appearance: none;
+                -webkit-appearance: none;
+                height: 24px;
+                width: 24px;
+                border-radius: 8px;
+                background-color: $pink;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            label {
+                font-size: 16px;
+                line-height: 20.8px;
+            }
         }
-        &-fake::before {
-            content: "";
-            display: block;
-            width: 14px;
-            height: 14px;
-            background-color: $grayText;
-            border-radius: 8px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            opacity: 0;
-            transition: .2s;
-        }
-        &-input {
+        &-check input:after {
+            content: url(./../assets/icon/check.svg);
             display: none;
         }
-        &-input:checked + &-fake::before {
-            opacity: 1;
-        }
-        &-span {
-            font-size: 16px;
-            line-height: 20.8px;
+        &-check input:checked:after {
+            display: block;
         }
     }
     &__tell {
@@ -221,6 +218,7 @@ label{
         padding: 32px 48px 48px 48px;
         border-radius: 24px;
         background-color: $grayBG;
+        max-height: 588.39px;
         &-title {
             font-size: 18px;
             line-height: 23.4px;
@@ -233,7 +231,6 @@ label{
             font-size: 14px;
             line-height: 18.2px;
             padding-bottom: 10px;
-            padding-top: 16px;
             span {
                 font-weight: 500;
             }
@@ -270,25 +267,28 @@ label{
     &__block {
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         column-gap: 105px;
         font-size: 16px;
         line-height: 20.8px;
         border-bottom: 1px solid #DADADA;
+        margin-bottom: 16px;
         &-product {
             padding-bottom: 5px;
+            white-space: nowrap;
         }
         &-amount {
             padding-bottom: 5px;
         }
         &-pay {
             font-weight: 700;
-            padding-bottom: 20.5px;
         }
     }
     &__block img {
         width: 80px;
         height: 80px;
         border-radius: 16px;
+        margin-bottom: 16px;
     }
     &__map {
         padding: 24px;

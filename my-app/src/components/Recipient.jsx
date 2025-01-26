@@ -21,22 +21,20 @@ function Recipient () {
                             <input placeholder="Имя получателя *" type="text" />
                             <input placeholder="Телефон получателя *" type="tell" />
                         </div>
-                        <label className="recipient__add">
-                            <input className="recipient__add-input" type="checkbox" />
-                            <span className="recipient__add-fake"></span>
-                            <div>
-                                <p>Прислать мне фотоотчет получателя с букетом <span>+160 ₽</span></p>
-                                <img src={question} alt="mark" />
-                            </div>
-                        </label>
-                        <label className="recipient__add">
-                            <input className="recipient__add-input" type="checkbox" />
-                            <span className="recipient__add-fake"></span>
-                            <p>Добавить открытку <span>+90 ₽</span></p>
-                        </label>
+                        <div className="recipient__adds">
+                        <div class="recipient__check">
+                            <input type="checkbox" id="check"/>
+                            <label for="check">Прислать мне фотоотчет получателя с букетом <span>+160 ₽</span>
+                            <img src={question} alt="mark" /></label>
+                        </div>
+                        <div class="recipient__check">
+                            <input type="checkbox" id="check"/>
+                            <label for="check">Добавить открытку <span>+90 ₽</span></label>
+                        </div>
+                        </div>
                         <div className="recipient__cards">
                             <div className="recipient__cards-counter">
-                                <p className="recipient__cards-text">Кол-во открыток</p>
+                                <p className="recipient__cards-text">Кол-во<br />открыток</p>
                                 <button>
                                     <img src={minus} alt="plus" />
                                 </button>
@@ -45,7 +43,7 @@ function Recipient () {
                                     <img src={plus} alt="minus" />
                                 </button>
                             </div>
-                            <input placeholder="Текст открытки. Если открыток нужно несколько, то укажите явно какой текст к какому товару нужно приложить." type="text" />
+                            <textarea placeholder="Текст открытки. Если открыток нужно несколько, то укажите явно какой текст к какому товару нужно приложить." type="text" />
                         </div>
                         <div className="recipient__email">
                             <p>Email для чека и фото букета</p>
@@ -53,14 +51,13 @@ function Recipient () {
                         </div>
                         <div className="recipient__special">
                             <p>Особые пожелания</p>
-                            <input placeholder="Комментарии" type="text" />
+                            <textarea placeholder="Комментарии" type="text" />
                         </div>
                         <a href="#" className="main-btn">Оформить заказ</a>
-                        <label className="recipient__agree">
-                            <input className="recipient__agree-input" type="checkbox" />
-                            <span className="recipient__agree-fake"></span>
-                            <span>Я соглашаюсь на хранение и обработку своих персональных данных в соответствии с законом №152-ФЗ "О персональных данных" от 27.07.2006, подтверждаю, что самостоятельно получил(-а) согласие третьих лиц на хранение и обработку их персональных данных и принимаю условия пользовательского соглашения</span>
-                        </label>
+                        <div class="recipient__check recipient__check-agree">
+                            <input type="checkbox" id="check"/>
+                            <label for="check">Я соглашаюсь на хранение и обработку своих персональных данных в соответствии с законом №152-ФЗ "О персональных данных" от 27.07.2006, подтверждаю, что самостоятельно получил(-а) согласие третьих лиц на хранение и обработку их персональных данных и принимаю условия пользовательского соглашения</label>
+                        </div>
                     </div>
 
                     <div className="make-order__info">
