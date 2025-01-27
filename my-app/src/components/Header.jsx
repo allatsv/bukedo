@@ -28,16 +28,24 @@ import whatsapp from "./../assets/icon/whatsapp.svg"
 import telegram from "./../assets/icon/telegram.svg"
 import close from "./../assets/icon/close.svg";
 import right from "./../assets/icon/right.svg"
-
+import Cart from './Cart.jsx'
 
 
 
 
 const Header = () => {
-    const [isOpen, setOpen] = useState(false);
+const [isOpen, setOpen] = useState(false);
   const menuRef = useRef(null);
   useClickOutside(menuRef, () => {
     if (isOpen) {setTimeout(() => setOpen(false), 50);} ;
+    
+  });
+  const [isOpenCart, setOpenCart] = useState(false);
+
+  const cartRef = useRef(null);
+  useClickOutside(cartRef, () => {
+    if (isOpen) {setTimeout(() => setOpenCart(false), 50);} ;
+    
   });
 
     return (
@@ -357,9 +365,10 @@ const Header = () => {
                         <button className="header__like">
                             <img src={like} alt="like" />
                         </button>
-                        <button className="header__cart">
+                        <button onClick={() => {setOpenCart(!isOpenCart);} } className="header__cart" >
                             <img src={cart} alt="cart" />
                         </button>
+                        <Cart />
                         <button className="header__account">
                             <img src={userHeader} alt="account" />
                             <div className="header__account-hrs">
