@@ -1,0 +1,159 @@
+.cart{
+    max-width: 856px;
+    margin: 0 auto;
+    border-radius: 24px;
+    box-shadow: 0px 8px 22px 0px #2626261A;
+    color: #1C1C1D;
+    &__close{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    &__inner{
+        padding: 48px;
+        position: relative;
+    }
+    &__title{
+        font-size: 42px;
+        font-weight: 500;
+        line-height: 54.6px;
+        padding-bottom: 24px;
+    }
+    &__items{
+        position: relative;
+        border-bottom: solid 1px #E3E6EC;
+       
+        &-wrap{
+            display: flex; 
+            padding-bottom: 16px;
+        }
+        &-close{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+           
+        }
+    }
+    &__content{
+        
+    }
+    &__name{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.8px;
+        padding-bottom: 9.5px;
+    }
+    &__img{
+        width: 100px;
+        height: 100px;
+        border-radius: 16px;
+        margin-right: 24px;
+    }
+    &__volume{
+        line-height: 18.2px;
+        color: #93949B;
+        span{
+            color: #1C1C1D;
+        }
+        padding-bottom: 8px;
+
+    }
+  
+    &__price{
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.8px;
+        position: absolute;
+            bottom: 25.5px;
+            right: 0px;
+    }
+    &__total{
+        display: inline-block;
+        &-inner{
+            max-width: 227px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20.8px;
+            color: #1C1C1D;
+            padding-bottom: 5px;
+
+        }
+        &-name{
+
+        }
+        &-price{
+
+        }
+        &-bonus{
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20.8px;
+            color: #03A050;
+            
+        }
+        &-inner-finish{
+            padding-top: 12px;
+            width: 227px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 28.6px;
+
+        }
+       
+
+    }
+    
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+.btn-count{
+    width: 40px;
+    height: 40px;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+}
+
+.btn-decr{
+
+}
+.btn-incr{
+
+}
+.count{
+    padding: 0px 23px;
+    font-size: 16px;
+    line-height: 20.8px;
+
+}
+.promo{
+    width: 197px;
+    font-size: 16px;
+    line-height: 20.8px;
+    color: #93949B;
+    padding: 14.5px 0;
+    border: solid 1px #E5E7EB;
+    border-radius: 12px;
+    text-align: center;
+
+}
+.promo-btn{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 14.5px 0;
+    color: #93949B;
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    margin-left: 8px;
+}

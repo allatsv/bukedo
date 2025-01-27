@@ -5,11 +5,13 @@ import { Recipient } from './components';
 import { MakeOrder } from './components';
 import { Counter } from './components';
 import { CountersList } from './components';
+import { Cart } from './components';
 import { Corporate,Bonussystem,Paymentdelivery, Agreement, AboutCompany, OrderPayment, Catalog } from './pages';
 function App() {
   return (
     <div className="App">
         <Header/>
+        <Cart/>
         <Counter/>
         <CountersList/>
           <MakeOrder/>
