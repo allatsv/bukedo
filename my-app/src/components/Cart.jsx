@@ -1,13 +1,13 @@
 import React, {useState, useRef} from 'react'
 
-function CartItem() {
+function CartItem({img, name, value, price}) {
     return (
         <div className="cart__items">
             <div className="cart__items-wrap">
-                <img src="../img/flower1.png" alt="" className="cart__img" />
+                <img src={img} alt="букет" className="cart__img" />
                 <div className="cart__content">
-                    <h3 className="cart__name">Сиреневый плайм</h3>
-                    <div className="cart__volume">Объём букета <span>1x</span></div>
+                    <h3 className="cart__name">{name}</h3>
+                    <div className="cart__volume">Объём букета <span>{value}x</span></div>
                     <div className="counter">
                         <button className="btn-count btn-decr">-</button>
                         <span className="count">1</span>
@@ -18,7 +18,7 @@ function CartItem() {
                         <path d="M18.7778 11L11 18.7778" stroke="#93949B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M11 11L18.7778 18.7778" stroke="#93949B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
-                    <span className="cart__price">1 910 ₽</span>
+                    <span className="cart__price">{price} ₽</span>
                 </div>
 
 
@@ -63,9 +63,9 @@ const Cart = () => {
                     <rect width="50" height="50" rx="25" fill="#F5F5F5" />
                     <path d="M17.5 17.5L25 25M25 25L32.5 32.5M25 25L32.5 17.5M25 25L17.5 32.5" stroke="#1C1C1D" stroke-width="1.5" stroke-linecap="round" />
                 </svg>
-                <CartItem />
-                <CartItem />
-                <CartItem />
+                <CartItem name ="Сиреневый плайм" img="../img/flower1.png" value="2" price = "948" />
+                <CartItem name ="Звонкий голос" img="../img/flower2.png" value="2" price = "948"/>
+                <CartItem name ="Rafaello" img="../img/rafaello.png" value="" price = "948" />
                 <div className="total">
                     <form action="">
                         <input className="promo" type="text" placeholder="Введите промокод" />
