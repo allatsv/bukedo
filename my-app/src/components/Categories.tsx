@@ -1,6 +1,9 @@
 import React from 'react'
 
+
+
 function Categories() {
+    
     const [] = React.useState();
     return (
         <div className='categories'>
