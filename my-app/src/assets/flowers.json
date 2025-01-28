@@ -1,0 +1,92 @@
+[
+    {
+        "id": 0,
+        "imageUrl": "../../img.flower1.png",
+        "name": "Сиреневый плайм",
+        "price": 900,
+        "flowers": "Розы",
+        "size": "parametr",
+        "color": "Розовый",
+        "rating": 6
+    },
+    {
+        "id": 1,
+        "imageUrl": "../../img.flower1.png",
+        "name": "Гипноз",
+        "price": 900,
+        "flowers": "Гвоздика",
+        "size": "parametr",
+        "color": "Зеленый",
+        "rating": 4
+    },
+    {
+        "id": 2,
+        "imageUrl": "../../img.flower1.png",
+        "name": "Коробка с гортензиями",
+        "price": 1500,
+        "flowers": "Анемон",
+        "size": "parametr",
+        "color": "Желтый",
+        "rating": 3
+    },
+    {
+        "id": 3,
+        "imageUrl": "../../img.flower1.png",
+        "name": "Розы",
+        "price": 1900,
+        "flowers": "Альстромерия",
+        "size": "parametr",
+        "color": "Красный",
+        "rating": 1
+    },
+    {
+        "id": 4,
+        "imageUrl": "../../img.flower1.png",
+        "name": "Розы",
+        "price": 900,
+        "flowers": "Розы",
+        "size": "parametr",
+        "color": "Белый",
+        "rating": 3
+    },
+    {
+        "id": 5,
+        "imageUrl": "../../img.flower1.png",
+        "name": "Розы",
+        "price": 900,
+        "flowers": "Розы",
+        "size": "parametr",
+        "color": "Розовый",
+        "rating": 6
+    },
+    {
+        "id": 6,
+        "imageUrl": "../../img.flower1.png",
+        "name": "Розы",
+        "price": 900,
+        "flowers": "Розы",
+        "size": "parametr",
+        "color": "Розовый",
+        "rating": 5
+    },
+    {
+        "id": 7,
+        "imageUrl": "../../img.flower1.png",
+        "name": "Розы",
+        "price": 1400,
+        "flowers": "Амариллис",
+        "size": "parametr",
+        "color": "Белый",
+        "rating": 7
+    },
+    {
+        "id": 8,
+        "imageUrl": "../../img.flower1.png",
+        "name": "Розы",
+        "price": 3000,
+        "flowers": "Розы",
+        "size": "parametr",
+        "color": "Оранжевый",
+        "rating": 61
+    }
+]

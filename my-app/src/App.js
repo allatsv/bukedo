@@ -6,11 +6,17 @@ import { MakeOrder } from './components';
 import { Counter } from './components';
 import { CountersList } from './components';
 import { Cart } from './components';
+import { Categories } from './components';
+
+
+
 import { Corporate,Bonussystem,Paymentdelivery, Agreement, AboutCompany, OrderPayment, Catalog } from './pages';
 function App() {
   return (
     <div className="App">
+
         <Header/>
+        <Categories/>
         <Cart/>
         <Counter/>
         <CountersList/>

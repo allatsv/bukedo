@@ -1,5 +1,5 @@
 import React, {useState, useRef} from 'react'
-
+import flowers from '.././assets/flowers.json'
 function CartItem({img, name, value, price}) {
     return (
         <div className="cart__items">
@@ -14,7 +14,7 @@ function CartItem({img, name, value, price}) {
                         <button className="btn-count btn-incr">+</button>
                     </div>
                     <svg className="cart__items-close" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="30" height="30" rx="15" fill="#F5F5F5" />
+                         <rect width="30" height="30" rx="15" fill="#F5F5F5" />
                         <path d="M18.7778 11L11 18.7778" stroke="#93949B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                         <path d="M11 11L18.7778 18.7778" stroke="#93949B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
@@ -63,7 +63,10 @@ const Cart = () => {
                     <rect width="50" height="50" rx="25" fill="#F5F5F5" />
                     <path d="M17.5 17.5L25 25M25 25L32.5 32.5M25 25L32.5 17.5M25 25L17.5 32.5" stroke="#1C1C1D" stroke-width="1.5" stroke-linecap="round" />
                 </svg>
-                <CartItem name ="Сиреневый плайм" img="../img/flower1.png" value="2" price = "948" />
+                { flowers.map(obj=><CartItem name ={obj.name} img="../img/flower1.png" value="2" price = "948" />)
+                    
+                }
+                
                 <CartItem name ="Звонкий голос" img="../img/flower2.png" value="2" price = "948"/>
                 <CartItem name ="Rafaello" img="../img/rafaello.png" value="" price = "948" />
                 <div className="total">
