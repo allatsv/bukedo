@@ -1,0 +1,319 @@
+.date-order {
+  width: 306px;
+  height: 50px;
+  border: 1px solid #93949B;
+  border-radius: 12px;
+  padding-left: 24px;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
+input[type=date] {
+  position: relative;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+}
+
+.btn-accent {
+  color: #fff;
+  background-color: #ff8007;
+  transition: all 0.3s;
+}
+
+.btn {
+  font: 14px "Gilroy-Extrabold", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  padding: 15px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.pa__top-sec input[type=date]:not(:valid):before {
+  content: attr(placeholder);
+  width: 100%;
+  font: 14px "Gilroy-Extrabold", sans-serif;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+.input-inner-city-item {
+  margin-bottom: 24px;
+}
+
+.make-order .main-btn {
+  width: 306px;
+  height: 65px;
+}
+.make-order__inner {
+  display: flex;
+  -moz-column-gap: 244px;
+       column-gap: 244px;
+  justify-content: space-between;
+}
+.make-order__btns {
+  display: flex;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  padding-bottom: 40px;
+}
+.make-order__checkbox {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  font-size: 16px;
+  line-height: 20.8px;
+  margin-bottom: 24px;
+}
+.make-order__checkbox-fake {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #AD2950;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 12px;
+}
+.make-order__checkbox-fake::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #AD2950;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.2s;
+}
+.make-order__checkbox-input {
+  display: none;
+}
+.make-order__checkbox-input:checked + .make-order__checkbox-fake::before {
+  opacity: 1;
+}
+.make-order__inputs-title {
+  font-size: 16px;
+  line-height: 20.8px;
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+.make-order__inputs-city {
+  position: relative;
+  padding-bottom: 24px;
+}
+.make-order__inputs-city input {
+  width: 636px;
+  height: 50px;
+  border: 1px solid #93949B;
+  border-radius: 12px;
+  padding-left: 24px;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+.make-order__inputs-city input::-moz-placeholder {
+  color: #93949B;
+}
+.make-order__inputs-city input::placeholder {
+  color: #93949B;
+}
+.make-order__date {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.make-order__date .input-inner {
+  margin-right: 24px;
+}
+.make-order__date-inner {
+  display: flex;
+  margin-bottom: 48px;
+}
+.make-order__date input {
+  width: 306px;
+  height: 50px;
+  border: 1px solid #93949B;
+  border-radius: 12px;
+  padding-left: 24px;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+.make-order__date-title {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  padding-bottom: 18px;
+}
+.make-order__date-check {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+.make-order__date-check input {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  border-radius: 8px;
+  background-color: #AD2950;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.make-order__date-check label {
+  font-size: 16px;
+  line-height: 20.8px;
+}
+.make-order__date-check input:after {
+  content: url(./../assets/icon/check.svg);
+  display: none;
+}
+.make-order__date-check input:checked:after {
+  display: block;
+}
+.make-order__tell {
+  padding-bottom: 48px;
+}
+.make-order__tell-title {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  padding-bottom: 18px;
+}
+.make-order__tell input {
+  width: 306px;
+  height: 50px;
+  padding-left: 24px;
+  border: 1px solid #93949B;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+.make-order__tell input::-moz-placeholder {
+  color: #93949B;
+}
+.make-order__tell input::placeholder {
+  color: #93949B;
+}
+.make-order__info {
+  padding: 32px 48px 48px 48px;
+  border-radius: 24px;
+  background-color: #F5F5F5;
+  max-height: 588.39px;
+}
+.make-order__info-title {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+.make-order__info-amount {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 18.2px;
+  padding-bottom: 10px;
+}
+.make-order__info-amount span {
+  font-weight: 500;
+}
+.make-order__info-delivery {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 18.2px;
+  padding-bottom: 10px;
+}
+.make-order__info-delivery span {
+  font-weight: 500;
+}
+.make-order__info-bonus {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 18.2px;
+  padding-bottom: 21.5px;
+}
+.make-order__info-bonus span {
+  font-weight: 500;
+  color: #03A050;
+}
+.make-order__info-total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  line-height: 28.6px;
+  font-weight: 700;
+}
+.make-order__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  -moz-column-gap: 105px;
+       column-gap: 105px;
+  font-size: 16px;
+  line-height: 20.8px;
+  border-bottom: 1px solid #DADADA;
+  margin-bottom: 16px;
+}
+.make-order__block-product {
+  padding-bottom: 5px;
+  white-space: nowrap;
+}
+.make-order__block-amount {
+  padding-bottom: 5px;
+}
+.make-order__block-pay {
+  font-weight: 700;
+}
+.make-order__block img {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.make-order__map {
+  padding: 24px;
+  border: 1px solid #E8EAEE;
+  border-radius: 16px;
+  margin-bottom: 48px;
+}
+.make-order__map-address {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+.make-order__map-info {
+  display: flex;
+  justify-content: space-between;
+}
+.make-order__map-title {
+  font-size: 12px;
+  line-height: 15.6px;
+  font-weight: 500;
+  color: #93949B;
+  padding-bottom: 4px;
+}
+.make-order__map-descrip {
+  font-size: 14px;
+  line-height: 18.2px;
+  padding-bottom: 16px;
+}/*# sourceMappingURL=makeOrder.css.map */

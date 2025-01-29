@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "PT Root UI";
+  src: url(./fonts/PT-Root-UI_Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: url(./fonts/PT-Root-UI_Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "PT Root UI";
+  src: url(./fonts/PT-Root-UI_Bold.ttf);
+  font-weight: 700;
+}
+.card {
+  font-family: "PT Root UI";
+  max-width: 306px;
+}
+.card__name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.8px;
+  padding-bottom: 10px;
+  padding-top: 16px;
+}
+.card__img {
+  border-radius: 16px;
+}
+.card__delivery {
+  display: flex;
+  align-items: center;
+  color: #93949B;
+  line-height: 18.2px;
+  padding-bottom: 11px;
+}
+.card__delivery svg {
+  margin-right: 8px;
+}
+.card__price-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__price {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #1C1C1D;
+}/*# sourceMappingURL=card.css.map */

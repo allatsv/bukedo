@@ -1,0 +1,29 @@
+.categories {
+  font-weight: 500;
+  line-height: 18.2px;
+  color: #1C1C1D;
+  font-size: 14px;
+}
+.categories__list {
+  display: flex;
+  justify-content: space-between;
+}
+.categories__list-item, .categories__list-reset {
+  cursor: pointer;
+  background-color: #F5F5F5;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  width: 130px;
+}
+.categories__list-item:first-child {
+  width: 240px;
+}
+.categories__list-reset {
+  background-color: white;
+  border: 1px solid #E5E7EB;
+  width: 143px;
+  white-space: nowrap;
+}/*# sourceMappingURL=categories.css.map */
