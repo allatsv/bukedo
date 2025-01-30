@@ -142,6 +142,13 @@ body {
     font-weight: 700;
     color: $pink;
 }
+.btn-gray {
+    padding: 14.5px 32px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 20.8px;
+}
 .main-title {
     font-size: 42px;
     line-height: 54.6px;
@@ -175,14 +182,342 @@ body {
 .title-scroll {
     display: flex;
     justify-content: space-between;
-    &__text {
-        font-size: 42px;
-        line-height: 54.6px;
-        font-weight: 500;
-    }
     &__btns {
         display: flex;
         column-gap: 16px;
+    }
+}
+.close {
+    padding: 10px;
+    border-radius: 50%;
+    background-color: $grayBG;
+}
+
+/* MY-DATA */
+
+.my-data {
+    &__inner {
+        display: flex;
+        column-gap: 134px;
+    }
+    &__person {
+        padding: 32px 24px 40px 24px;
+        border: 1px solid #E5E7EB;
+        border-radius: 24px;
+        height: 455px;
+        &-name {
+            font-size: 22px;
+            line-height: 28.6px;
+            font-weight: 500;
+            padding-bottom: 5px;
+        }
+        &-tel {
+            font-size: 14px;
+            line-height: 18.2px;
+            padding-bottom: 16px;
+        }
+        &-points {
+            padding: 20px 147px 20px 20px;
+            background-color: $pink;
+            border-radius: 16px;
+            color: #fff;
+            position: relative;
+            width: 258px;
+            height: 90px;
+            margin-bottom: 40px;
+            div {
+                display: flex;
+                column-gap: 8px;
+                padding-bottom: 1px;
+            }
+            img {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                mix-blend-mode: multiply;
+            }
+            svg {
+                position: relative;
+                z-index: 1;
+            }
+        }
+        &-number {
+            font-size: 32px;
+            line-height: 32px;
+            font-weight: 500;
+        }
+        &-account {
+            font-size: 14px;
+            line-height: 18.2px;
+            text-decoration: underline;
+            white-space: nowrap;
+            position: relative;
+            z-index: 1;
+        }
+        &-item {
+            display: flex;
+            column-gap: 16px;
+            font-size: 16px;
+            line-height: 20.8px;
+            padding-bottom: 16px;
+            cursor: pointer;
+            p {
+                color: $blackText;
+            }
+        }
+        &-item:hover {
+            p {
+                color: $pink;
+            }
+            svg {
+                fill: $pink;
+                stroke: $pink;
+            }
+        }
+    }
+    &__info {
+        .btn-gray {
+            width: 416px;
+            height: 50px;
+            margin-top: 24px;
+        }
+        .main-title {
+            padding-bottom: 32px;
+        }
+        width: 416px;
+        &-tel {
+            padding: 16px 24px;
+            background-color: $grayBG;
+            border-radius: 16px;
+            width: 416px;
+            height: 87px;
+            margin-bottom: 24px;
+            div {
+                display: flex;
+                justify-content: space-between;
+            }
+            p {
+                font-size: 22px;
+                line-height: 28.6px;
+                font-weight: 500;
+            }
+            h6 {
+                font-size: 14px;
+                line-height: 18.2px;
+                padding-bottom: 8px;
+                color: $grayText;
+            }
+        }
+        &-notnecessarily {
+            font-size: 14px;
+            line-height: 18.2px;
+            color: $grayText;
+            padding-bottom: 48px;
+        }
+    }
+    &__field {
+        padding-bottom: 24px;
+        &-div {
+            position: relative;
+        }
+        &-input {
+            padding: 10px;
+            padding-left: 24px;
+            width: 416px;
+            height: 50px;
+            box-sizing: border-box;
+            outline: none;
+            border: 1px solid $grayText;
+            border-radius: 12px;
+        }
+        &-label {
+            position: absolute;
+            top: 14px;
+            left: 24px;
+            font-size: 16px;
+            line-height: 20.8px;
+            color: $grayText;
+            transition: 0.3s;
+            pointer-events: none;
+        }
+        &-input:focus + &-label {
+            top: 5px;
+            font-size: 12px;
+            line-height: 15.6px;
+        }
+    }
+    &__field:last-child {
+        padding-bottom: 8px;
+    }
+    &__password {
+        &-title {
+            font-size: 18px;
+            line-height: 23.4px;
+            font-weight: 700;
+            padding-bottom: 18px;
+        }
+        &-input {
+            width: 416px;
+            height: 50px;
+            padding-left: 24px;
+            border: 1px solid $grayText;
+            border-radius: 12px;
+            font-size: 16px;
+            line-height: 20.8px;
+            margin-bottom: 24px;
+        }
+        &-input::placeholder {
+            color: $grayText;
+        }
+    }
+}
+
+/* EDITITNG */
+
+.editing {
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    width: 636px;
+    height: 663px;
+    &__inner {
+        padding: 48px;
+        background-color: #fff;
+        border-radius: 24px;
+        position: relative;
+    }
+    &__title {
+        font-size: 32px;
+        line-height: 41.6px;
+        font-weight: 500;
+        padding-bottom: 24px;
+    }
+    &__descrip {
+        font-size: 16px;
+        line-height: 20.8px;
+        padding-bottom: 24px;
+    }
+    &__field {
+        padding-bottom: 24px;
+        &-div {
+            position: relative;
+        }
+        &-input {
+            padding: 10px;
+            padding-left: 24px;
+            width: 100%;
+            height: 50px;
+            box-sizing: border-box;
+            outline: none;
+            border: 1px solid $grayText;
+            border-radius: 12px;
+            &-personal {
+                width: 306px;
+            }
+            &-comment {
+                height: 94px;
+            }
+        }
+        &-label {
+            position: absolute;
+            top: 14px;
+            left: 24px;
+            font-size: 16px;
+            line-height: 20.8px;
+            color: $grayText;
+            transition: 0.3s;
+            pointer-events: none;
+        }
+        &-input:focus + &-label {
+            top: 5px;
+            font-size: 12px;
+            line-height: 15.6px;
+        }
+    }
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+    }
+    &__save {
+        padding: 14.5px 32px;
+        font-size: 16px;
+        line-height: 20.8px;
+        font-weight: 700;
+        color: #fff;
+        background-color: #03A050;
+        border-radius: 12px;
+        height: 50px;
+    }
+}
+
+/* DELIVERY-CITY */
+
+.delivery-city {
+    .main-title {
+        padding-bottom: 32px;
+    }
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 24px;
+    }
+    &__left {
+        padding: 135px 184px 32px 32px;
+        background-color: $grayBG;
+        border-radius: 16px;
+        height: 328px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &-columns {
+            display: flex;
+            column-gap: 10px;
+        }
+        &-column {
+            width: 150px;
+        }
+        &-category {
+            font-size: 16px;
+            line-height: 20.8px;
+            color: $blackText;
+            padding-bottom: 16px;
+        }
+        &-category:last-child {
+            padding-bottom: 0;
+        }
+        &-title {
+            font-size: 32px;
+            line-height: 41.6px;
+            font-weight: 500;
+            padding-bottom: 24px;
+        }
+    }
+    &__right {
+        display: flex;
+        column-gap: 24px;
+        flex-wrap: wrap;
+        &-block {
+            text-align: center;
+            width: 168.5px;
+            height: 152px;
+            padding: 11px 24px;
+            background-color: $grayBG;
+            border-radius: 16px;
+        }
+        &-title {
+            font-size: 16px;
+            line-height: 20.8px;
+            color: $blackText;
+            padding-top: 8px;
+            width: 120.5px;
+            margin: 0 auto;
+        }
     }
 }
 
@@ -249,37 +584,23 @@ body {
 /* RATING-SHOP */
 
 .rating-shop {
-    padding: 90px 0;
-    background-color: $grayBG;
-    &__title {
-        display: flex;
-        justify-content: space-between;
-        &-info {
+    .title-scroll {
+        div {
             display: flex;
         }
-        &-name {
+        img {
+            margin: 0 12px 0 18px;
+            width: 32px;
+        }
+        p {
             font-size: 42px;
             line-height: 54.6px;
             font-weight: 500;
-            padding-right: 10px;
-        }
-        &-number {
-            font-size: 42px;
-            line-height: 54.6px;
-            font-weight: 500;
-            padding-right: 4px;
-        }
-        &-btns {
-            display: flex;
-            column-gap: 16px;
-        }
-        &-btn {
-            padding: 13px;
-            border-radius: 12px;
-            background-color: #fff;
-            height: 50px;
+            color: $pink;
         }
     }
+    padding: 90px 0;
+    background-color: $grayBG;
     &__details {
         display: flex;
         align-items: flex-end;
@@ -344,7 +665,11 @@ body {
 /* ADVANTAGES */
 
 .advantages {
-    &__inner {
+    .main-title {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    &__blocks {
         display: flex;
         justify-content: space-between;
     }
