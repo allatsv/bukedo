@@ -140,6 +140,16 @@ body {
   line-height: 20.8px;
 }
 
+.btn-black {
+  padding: 15px 24px;
+  background-color: #1C1C1D;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 20.16px;
+  font-weight: 700;
+  color: #fff;
+}
+
 .main-title {
   font-size: 42px;
   line-height: 54.6px;
@@ -187,6 +197,123 @@ body {
   background-color: #F5F5F5;
 }
 
+/* ORDER-NUMBER */
+.order-number .main-btn {
+  width: 177px;
+  white-space: nowrap;
+}
+.order-number__inner {
+  display: flex;
+  -moz-column-gap: 134px;
+       column-gap: 134px;
+}
+.order-number__title {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  padding-bottom: 16px;
+}
+.order-number__title-text {
+  font-size: 32px;
+  line-height: 38.4px;
+  font-weight: 500;
+}
+.order-number__title-status {
+  font-size: 14px;
+  line-height: 18.2px;
+  font-weight: 500;
+  padding: 4px 8px;
+  height: 26px;
+  background-color: #FFC739;
+  border-radius: 6px;
+}
+.order-number__confirm {
+  width: 416px;
+  padding: 24px;
+  background-color: #F5F5F5;
+  border-radius: 24px;
+  margin: 24px 0 48px 0;
+}
+.order-number__confirm .order-number__pretitle {
+  padding-bottom: 16px;
+}
+.order-number__confirm-descrip {
+  font-size: 14px;
+  line-height: 18.2px;
+  padding-bottom: 24px;
+  max-width: 320px;
+}
+.order-number__confirm-descrip span {
+  font-weight: 700;
+}
+.order-number__delivery .order-number__pretitle {
+  padding-bottom: 26px;
+}
+.order-number__delivery-item {
+  display: flex;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+  font-size: 16px;
+  line-height: 20.8px;
+  padding-bottom: 8px;
+}
+.order-number__delivery-item p {
+  color: #93949B;
+  width: 140px;
+}
+.order-number__delivery-item:last-child {
+  padding-bottom: 0;
+}
+.order-number__card {
+  padding: 48px 0;
+}
+.order-number__card .order-number__pretitle {
+  padding-bottom: 18px;
+}
+.order-number__card-item {
+  font-size: 16px;
+  line-height: 20.8px;
+  width: 416px;
+  height: 53px;
+  background-color: #F5F5F5;
+  border-radius: 12px;
+  padding: 16px 24px;
+}
+.order-number__edit .order-number__pretitle {
+  padding-bottom: 18px;
+}
+.order-number__edit-title {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+  padding-bottom: 18px;
+}
+.order-number__edit-descrip {
+  font-size: 14px;
+  line-height: 18.2px;
+  padding-bottom: 18px;
+}
+.order-number__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order-number__btns-cancel {
+  font-size: 16px;
+  line-height: 20.8px;
+  color: #93949B;
+  border-bottom: 1px dashed #93949B;
+}
+.order-number__info {
+  width: 416px;
+}
+.order-number__pretitle {
+  font-size: 18px;
+  line-height: 23.4px;
+  font-weight: 700;
+}
+
 /* MY-DATA */
 .my-data__inner {
   display: flex;
@@ -198,6 +325,7 @@ body {
   border: 1px solid #E5E7EB;
   border-radius: 24px;
   height: 455px;
+  width: 306px;
 }
 .my-data__person-name {
   font-size: 22px;

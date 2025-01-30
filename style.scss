@@ -149,6 +149,15 @@ body {
     font-size: 16px;
     line-height: 20.8px;
 }
+.btn-black {
+    padding: 15px 24px;
+    background-color: $blackText;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 20.16px;
+    font-weight: 700;
+    color: #fff;
+}
 .main-title {
     font-size: 42px;
     line-height: 54.6px;
@@ -193,6 +202,127 @@ body {
     background-color: $grayBG;
 }
 
+/* ORDER-NUMBER */
+
+.order-number {
+    .main-btn {
+        width: 177px;
+        white-space: nowrap;
+    }
+    &__inner {
+        display: flex;
+        column-gap: 134px;
+    }
+    &__title {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        padding-bottom: 16px;
+        &-text {
+            font-size: 32px;
+            line-height: 38.4px;
+            font-weight: 500;
+        }
+        &-status {
+            font-size: 14px;
+            line-height: 18.2px;
+            font-weight: 500;
+            padding: 4px 8px;
+            height: 26px;
+            background-color: #FFC739;
+            border-radius: 6px;
+        }
+    }
+    &__confirm {
+        .order-number__pretitle {
+            padding-bottom: 16px;
+        }
+        width: 416px;
+        padding: 24px;
+        background-color: $grayBG;
+        border-radius: 24px;
+        margin: 24px 0 48px 0;
+        &-descrip {
+            font-size: 14px;
+            line-height: 18.2px;
+            padding-bottom: 24px;
+            max-width: 320px;
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+    &__delivery {
+        .order-number__pretitle {
+            padding-bottom: 26px;
+        }
+        &-item {
+            display: flex;
+            column-gap: 4px;
+            font-size: 16px;
+            line-height: 20.8px;
+            padding-bottom: 8px;
+            p {
+                color: $grayText;
+                width: 140px;
+            }
+        }
+        &-item:last-child {
+            padding-bottom: 0;
+        }
+    }
+    &__card {
+        .order-number__pretitle {
+            padding-bottom: 18px;
+        }
+        padding: 48px 0;
+        &-item {
+            font-size: 16px;
+            line-height: 20.8px;
+            width: 416px;
+            height: 53px;
+            background-color: $grayBG;
+            border-radius: 12px;
+            padding: 16px 24px;
+        }
+    }
+    &__edit {
+        .order-number__pretitle {
+            padding-bottom: 18px;
+        }
+        &-title {
+            font-size: 18px;
+            line-height: 23.4px;
+            font-weight: 700;
+            padding-bottom: 18px;
+        }
+        &-descrip {
+            font-size: 14px;
+            line-height: 18.2px;
+            padding-bottom: 18px;
+        }
+    }
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-cancel {
+            font-size: 16px;
+            line-height: 20.8px;
+            color: $grayText;
+            border-bottom: 1px dashed $grayText;
+        }
+    }
+    &__info {
+        width: 416px;
+    }
+    &__pretitle {
+        font-size: 18px;
+        line-height: 23.4px;
+        font-weight: 700;
+    }
+}
+
 /* MY-DATA */
 
 .my-data {
@@ -205,6 +335,7 @@ body {
         border: 1px solid #E5E7EB;
         border-radius: 24px;
         height: 455px;
+        width: 306px;
         &-name {
             font-size: 22px;
             line-height: 28.6px;
