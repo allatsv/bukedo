@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import flowerImg1 from "./../assets/img/flower-item.png"
 function Card({ title, price }) {
     let [productAdd, setProductAdd] = useState("Купить");
     let [styleBtn, setStyleBtn] = useState(false);
@@ -13,7 +12,7 @@ function Card({ title, price }) {
     return (
         <div className='card'>
             <div className="card__inner">
-                <img className='card__img' src={flowerImg1} alt="" />
+                <img className='card__img' src="../img/flower-item.png" alt="" />
                 <h3 className='card__name'>{title}</h3>
                 <div className="card__delivery">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
