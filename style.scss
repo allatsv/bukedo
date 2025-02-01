@@ -149,6 +149,15 @@ body {
     font-size: 16px;
     line-height: 20.8px;
 }
+.btn-green {
+    padding: 14.5px 24px;
+    border: 1px solid #03A050;
+    color: #03A050;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.8px;
+}
 .btn-black {
     padding: 15px 24px;
     background-color: $blackText;
@@ -205,6 +214,39 @@ body {
 /* ORDER-NUMBER */
 
 .order-number {
+    .reviews__block-img {
+        img {
+            width: 196px;
+            height: 196px;
+        }
+    }
+    .reviews__block-imgs {
+        column-gap: 24px;
+    }
+    .reviews__block {
+        padding: 0;
+        padding-top: 18px;
+    }
+    .reviews__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 18px;
+    }
+    .btn-gray {
+        font-size: 14px;
+        line-height: 18.2px;
+        padding: 11px 16px;
+        width: 169px;
+        height: 40px;
+        white-space: nowrap;
+    }
+    .btn-green {
+        width: 170px;
+        height: 50px;
+        white-space: nowrap;
+        margin-bottom: 48px;
+    }
     .main-btn {
         width: 177px;
         white-space: nowrap;
@@ -231,6 +273,10 @@ body {
             height: 26px;
             background-color: #FFC739;
             border-radius: 6px;
+            &--ready {
+                color: #fff;
+                background-color: #03A050;
+            }
         }
     }
     &__confirm {
@@ -250,6 +296,22 @@ body {
             span {
                 font-weight: 700;
             }
+        }
+        &-number {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 8px;
+            font-size: 22px;
+            line-height: 28.6px;
+            font-weight: 500;
+        }
+        &-title {
+            font-size: 14px;
+            line-height: 18.2px;
+            color: $grayText;
+        }
+        &--ready {
+            padding: 16px 24px;
         }
     }
     &__delivery {
@@ -320,6 +382,24 @@ body {
         font-size: 18px;
         line-height: 23.4px;
         font-weight: 700;
+    }
+    &__before {
+        padding-bottom: 48px;
+        &-img {
+            border-radius: 8px;
+            width: 196px;
+            height: 196px;
+            object-fit: cover;
+            margin-top: 18px;
+        }
+    }
+    &__pay {
+        padding-top: 48px;
+        &-info {
+            font-size: 14px;
+            line-height: 18.2px;
+            padding-top: 18px;
+        }
     }
 }
 

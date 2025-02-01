@@ -140,6 +140,16 @@ body {
   line-height: 20.8px;
 }
 
+.btn-green {
+  padding: 14.5px 24px;
+  border: 1px solid #03A050;
+  color: #03A050;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.8px;
+}
+
 .btn-black {
   padding: 15px 24px;
   background-color: #1C1C1D;
@@ -198,6 +208,38 @@ body {
 }
 
 /* ORDER-NUMBER */
+.order-number .reviews__block-img img {
+  width: 196px;
+  height: 196px;
+}
+.order-number .reviews__block-imgs {
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+.order-number .reviews__block {
+  padding: 0;
+  padding-top: 18px;
+}
+.order-number .reviews__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 18px;
+}
+.order-number .btn-gray {
+  font-size: 14px;
+  line-height: 18.2px;
+  padding: 11px 16px;
+  width: 169px;
+  height: 40px;
+  white-space: nowrap;
+}
+.order-number .btn-green {
+  width: 170px;
+  height: 50px;
+  white-space: nowrap;
+  margin-bottom: 48px;
+}
 .order-number .main-btn {
   width: 177px;
   white-space: nowrap;
@@ -228,6 +270,10 @@ body {
   background-color: #FFC739;
   border-radius: 6px;
 }
+.order-number__title-status--ready {
+  color: #fff;
+  background-color: #03A050;
+}
 .order-number__confirm {
   width: 416px;
   padding: 24px;
@@ -246,6 +292,22 @@ body {
 }
 .order-number__confirm-descrip span {
   font-weight: 700;
+}
+.order-number__confirm-number {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+  font-size: 22px;
+  line-height: 28.6px;
+  font-weight: 500;
+}
+.order-number__confirm-title {
+  font-size: 14px;
+  line-height: 18.2px;
+  color: #93949B;
+}
+.order-number__confirm--ready {
+  padding: 16px 24px;
 }
 .order-number__delivery .order-number__pretitle {
   padding-bottom: 26px;
@@ -312,6 +374,25 @@ body {
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 700;
+}
+.order-number__before {
+  padding-bottom: 48px;
+}
+.order-number__before-img {
+  border-radius: 8px;
+  width: 196px;
+  height: 196px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-top: 18px;
+}
+.order-number__pay {
+  padding-top: 48px;
+}
+.order-number__pay-info {
+  font-size: 14px;
+  line-height: 18.2px;
+  padding-top: 18px;
 }
 
 /* MY-DATA */
