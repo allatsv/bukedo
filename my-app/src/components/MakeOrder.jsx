@@ -53,7 +53,7 @@ function MakeOrder() {
                                     <div class="pa__middle-item input-txt"><input class="pa__middle-input text" type="date" name="date" placeholder="From" onchange="this.className=(this.value!=''?'has-value':'')" required/></div>                           
                                 </div>
                                 <div class="make-order__date-check">
-                                <input type="checkbox" id="check"/>
+                                <input class="make-order__date-time" type="checkbox" id="check"/>
                                 <label for="check">Уточните время у получателя</label>
                                 </div>
                             </div>

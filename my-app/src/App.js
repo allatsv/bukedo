@@ -6,7 +6,6 @@ import { MakeOrder } from './components';
 import { Counter } from './components';
 import { CountersList } from './components';
 import { Cart } from './components';
-import { Categories } from './components';
 
 
 
@@ -16,7 +15,6 @@ function App() {
     <div className="App">
 
         <Header/>
-        <Categories/>
         <Cart/>
         <Counter/>
         <CountersList/>
