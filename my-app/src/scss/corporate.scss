@@ -176,3 +176,118 @@
         }
     }
 }
+
+@media (max-width: 960px) {
+    .container {
+        width: 343px;
+    }
+
+    .corporate {
+        .main-title {
+            padding-bottom: 24px;
+            font-size: 41.6px;
+            line-height: 41.6px;
+        }
+        &__delivery {
+            padding: 30px 24px 323px 24px;
+            &-img {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                max-height: 348px;
+            }
+            &-title {
+                font-size: 22px;
+                line-height: 28.6px;
+            }
+            &-info {
+                max-width: 295px;
+            }
+        }
+        &__settlement {
+            padding: 30px 24px 226px 24px;
+            &-title {
+                font-size: 22px;
+                line-height: 28.6px;
+                max-width: 295px;
+            }
+            &-text {
+                max-width: 295px;
+            }
+            &-img {
+                top: 0;
+                right: 0;
+            }
+        }
+        &__how {
+            display: block;
+            margin: 48px 0;
+            &-title {
+                font-size: 22px;
+                line-height: 28.6px;
+                max-width: 343px;
+                padding-top: 0;
+            }
+            &-list {
+                max-width: 343px;
+            }
+        }
+        &__stylish {
+            padding: 30px 24px 276px 24px;
+            &-title {
+                font-size: 22px;
+                line-height: 28.6px;
+            }
+            &-img {
+                bottom: 0;
+                left: 0;
+            }
+        }
+        &__contact {
+            column-gap: 0;
+            &-block {
+                padding: 24px;
+                width: 343px;
+            }
+            &-block:first-child {
+                width: 343px;
+            }
+            &-block:nth-child(4) {
+                width: 343px;
+                margin-bottom: 24px;
+                .corporate__contact-text {
+                    max-width: 295px;
+                    line-height: 20.8px;
+                }
+            }
+            &-block:last-child {
+                width: 343px;
+                height: 291px;
+                display: block;
+                column-gap: 0;
+                .corporate__contact-text {
+                    max-width: 282px;
+                    padding-bottom: 18px;
+                }
+            }
+            &-title {
+                padding-bottom: 18px;
+            }
+            &-flex {
+                display: block;
+            }
+            &-flex:last-child {
+                padding-bottom: 0;
+            }
+            &-text {
+                max-width: 295px;
+            }
+            &-email {
+                padding-top: 18px;
+            }
+            &-img {
+                display: none;
+            }
+        }
+    }
+}

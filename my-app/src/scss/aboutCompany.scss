@@ -52,3 +52,45 @@
         line-height: 20.8px;
     }
 }
+
+@media (max-width: 960px) {
+    .container {
+        width: 343px;
+    }
+
+    .about-company {
+        .main-title {
+            padding-bottom: 40px;
+        }
+        &__inner {
+            margin: 25.5px 0 50px 0;
+        }
+        &__how {
+            display: block;
+            column-gap: 0;
+        }
+        &__info {
+            max-width: 343px;
+        }
+        &__info h4 {
+            font-size: 22px;
+            line-height: 28.6px;
+            padding-bottom: 24px;
+        }
+        &__info p {
+            font-size: 16px;
+            line-height: 20.8px;
+        }
+        &__info p:last-child {
+            padding-bottom: 32px;
+        }
+        &__item {
+            display: block;
+            align-items: center;
+            column-gap: 0;
+        }
+        &__item:last-child {
+            margin-bottom: 48px;
+        }
+    }
+}

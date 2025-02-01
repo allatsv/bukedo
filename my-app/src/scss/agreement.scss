@@ -45,3 +45,27 @@
         padding-bottom: 0;
     }
 }
+
+@media (max-width: 960px) {
+    .container {
+        width: 343px;
+    }
+
+    .agreement {
+        .main-title {
+            font-size: 41.6px;
+            line-height: 41.6px;
+        }
+        margin: 25.5px 0 50px 0;
+        &__container {
+            width: 343px;
+        }
+        &__main p:first-child {
+            padding-top: 32px;
+        }
+        &__term h4 {
+            font-size: 18px;
+            line-height: 27px;
+        }
+    }
+}
