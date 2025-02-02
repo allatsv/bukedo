@@ -65,7 +65,9 @@ function OrderPayment () {
                 <div class="order-payment__bonus">
                     <div class="order-payment__bonus-top">
                         <h6 class="order-payment__pretitle">Списать 250 бонусных рублей</h6>
-                        <input class="order-payment__check" type="checkbox" />
+                        <div className="order-payment__bonus-check">
+                        <input type="checkbox" />
+                        </div>
                     </div>
                         <p class="order-payment__bonus-descrip">Бонусными рублями можно оплатить до 50% заказа</p>
                 </div>
@@ -84,12 +86,12 @@ function OrderPayment () {
                     <p class="order-payment__create-descrip">Выберите заказы для которых создать счет</p>
                     <div class="order-payment__create-checks">
                         <div class="order-payment__create-check">
-                            <input type="checkbox" id="check"/>
-                            <label for="check">№12133</label>
+                            <input type="checkbox" id="check-op"/>
+                            <label for="check-op"></label>
                         </div>
                         <div class="order-payment__create-check">
-                            <input type="checkbox" id="check"/>
-                            <label for="check">№1223</label>
+                            <input type="checkbox" id="check-op"/>
+                            <label for="check-op"></label>
                         </div>
                     </div>
                     <h5 class="order-payment__pretitle">Компания</h5>
