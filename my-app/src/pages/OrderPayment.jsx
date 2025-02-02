@@ -65,7 +65,7 @@ function OrderPayment () {
                 <div class="order-payment__bonus">
                     <div class="order-payment__bonus-top">
                         <h6 class="order-payment__pretitle">Списать 250 бонусных рублей</h6>
-                        <button class="order-payment__bonus-btn"></button>
+                        <input class="order-payment__check" type="checkbox" />
                     </div>
                         <p class="order-payment__bonus-descrip">Бонусными рублями можно оплатить до 50% заказа</p>
                 </div>

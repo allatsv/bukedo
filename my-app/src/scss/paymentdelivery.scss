@@ -132,3 +132,81 @@
         }
     }
 }
+
+
+@media (max-width: 960px) {
+    .container {
+        width: 327px;
+    }
+
+
+    .delivery {
+        .main-title {
+            padding-bottom: 24px;
+            font-size: 32px;
+            line-height: 41.6px;
+        }
+        margin: 50px 0;
+        &__info {
+            display: block;
+            column-gap: 0;
+        }
+        &__img {
+            width: 343px;
+            height: 262.8px;
+            margin-top: 0;
+        }
+        &__questions {
+            &-item {
+                border-radius: 12px;
+                width: 343px;
+                text-align: left;
+            }
+            &-question {
+                font-size: 18px;
+                line-height: 23.4px;
+            }
+            &-answer {
+                font-size: 14px;
+                line-height: 18.2px;
+            }
+        }
+    }
+    
+    /* PAYMENT */
+    
+    .payment {
+        padding: 25.5px 0 0 0;
+        border-bottom: 0;
+        .main-title {
+            font-size: 32px;
+            line-height: 41.6px;
+        }
+        &__inner {
+            padding: 24px 24px 30px 24px;
+        }
+        &__how {
+            display: block;
+            column-gap: 0;
+            padding: 24px 11px 24px 16px;
+            &-info {
+                max-width: 295px;
+            }
+            &-list {
+                font-size: 14px;
+                line-height: 18.2px;
+            }
+        }
+        &__block {
+            padding: 24px;
+            width: 327px;
+            margin-bottom: 16px;
+            &-title {
+                max-width: 279px;
+            }
+            &-info {
+                max-width: 279px;
+            }
+        }
+    }
+}

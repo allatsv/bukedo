@@ -330,3 +330,186 @@ label{
     border: 1px solid $grayText;
     padding-top: 0;
 }
+
+@media (max-width: 960px) {
+    .container {
+        width: 327px;
+    }
+
+
+    .date-order {
+        width: 306px;
+        height: 50px;
+        border: 1px solid #93949B;
+        border-radius: 12px;
+        padding-left: 24px;
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+    input[type="date"] {
+        position: relative;
+      }
+      
+      input[type="date"]::-webkit-calendar-picker-indicator {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: auto;
+        color: transparent;
+        background: transparent;
+      }
+    
+      .btn-accent {
+        color: #fff;
+        background-color: #ff8007;
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+      
+      .btn {
+        font: 14px "Gilroy-Extrabold", sans-serif;
+        font-weight: 800;
+        text-align: center;
+        padding: 15px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        border: 0;
+        cursor: pointer;
+      }
+      
+      .pa__top-sec input[type="date"]:not(:valid):before {
+        content: attr(placeholder);
+        width: 100%;
+        font: 14px "Gilroy-Extrabold", sans-serif;
+      }
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    .input-inner-city-item{
+        display: none;
+    }
+    .make-order {
+        .main-btn {
+            width: 327px;
+        }
+        &__inner {
+            display: block;
+            column-gap: 0;
+        }
+        &__btns {
+            padding-bottom: 34px;
+        }
+        
+        &__checkbox {
+            display: block;
+            column-gap: 0;
+            margin-bottom: 18px;
+            &-fake {
+                display: inline-block;
+                width: 24px;
+                height: 24px;
+                border: 1px solid $pink;
+                border-radius: 50%;
+                position: relative;
+                margin-right: 12px;
+            }
+            &-fake::before {
+                content: "";
+                display: block;
+                width: 14px;
+                height: 14px;
+                background-color: $pink;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: .2s;
+            }
+            &-input {
+                display: none;
+            }
+            &-input:checked + &-fake::before {
+                opacity: 1;
+            }
+        }
+        &__inputs {
+            &-title {
+                display: none;
+            }
+            &-city {
+                padding-bottom: 48px;
+            }
+            &-city input {
+                width: 327px;
+            }
+        }
+        &__date {
+            .input-inner{
+                margin-right: 24px;
+            }
+            &-inner{
+                display: block;
+            }
+            input{
+                width: 327px;
+            }
+            column-gap: 0;
+            &-check {
+                display: flex;
+                column-gap: 12px;
+                input {
+                    appearance: none;
+                    -webkit-appearance: none;
+                    height: 24px;
+                    width: 24px;
+                    border-radius: 8px;
+                    background-color: $pink;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                label {
+                    font-size: 16px;
+                    line-height: 20.8px;
+                }
+            }
+            &-check input:after {
+                content: url(./../assets/icon/check.svg);
+                display: none;
+            }
+            &-check input:checked:after {
+                display: block;
+            }
+        }
+        &__tell input {
+            width: 327px;
+        }
+        &__info {
+            padding: 24px;
+            height: 555.96px;
+            width: 327px;
+            &-bonus {
+                padding-bottom: 16px;
+            }
+        }
+        &__block {
+            column-gap: 64px;
+        }
+        &__map {
+            
+        }
+    }
+}
