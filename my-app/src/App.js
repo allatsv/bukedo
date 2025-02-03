@@ -16,6 +16,8 @@ function App() {
     <div className="App">
       <MakeOrder/>
       <Corporate/>
+      <AboutCompany/>
+      <Agreement/>
 
       {  /*<Paymentdelivery data = {date}/> */}
 

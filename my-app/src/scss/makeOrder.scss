@@ -72,6 +72,13 @@ label{
         font-size: 18px;
         line-height: 22.68px;
     }
+    &__title {
+        font-size: 18px;
+        line-height: 23.4px;
+        font-weight: 700;
+        padding-bottom: 18px;
+        display: none;
+    }
     &__inner {
         display: flex;
         column-gap: 244px;
@@ -403,6 +410,7 @@ label{
         display: none;
     }
     .make-order {
+        margin: 24px 0 50px 0;
         .main-btn {
             width: 327px;
         }
@@ -411,6 +419,9 @@ label{
             width: 155.5px;
             height: 50px;
             padding: 14.5px 19px;
+        }
+        &__title {
+            display: block;
         }
         &__inner {
             display: block;
@@ -514,6 +525,7 @@ label{
             padding: 24px;
             height: 555.96px;
             width: 327px;
+            margin: 48px 0 50px 0;
             &-bonus {
                 padding-bottom: 16px;
             }

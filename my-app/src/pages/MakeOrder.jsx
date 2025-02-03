@@ -66,6 +66,8 @@ function MakeOrder() {
                         </div>
                         <button className="main-btn">Продолжить</button>
 
+                        <h3 className="make-order__title">Адрес доставки</h3>
+
                         <div className="make-order__map">
                             <p className="make-order__map-address">г. Москва, Нижегородская, 25</p>
                             <div className="make-order__map-info">
