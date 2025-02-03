@@ -3,6 +3,10 @@ import corporateDelivery from "./../assets/img/corporate-delivery.png"
 import corporateSettlement from "./../assets/img/corporate-settlement.png"
 import corporateStylish from "./../assets/img/corporate-stylish.png"
 import corporateContact from "./../assets/img/corporate-contact.png"
+import corporateDeliveryAdapt from "./../assets/img/corporate-delivery-adapt.png"
+import corporateSettlementAdapt from "./../assets/img/corporate-settlement-adapt.png"
+import corporateStylishAdapt from "./../assets/img/corporate-stylish-adapt.png"
+
 function Corporate() {
     return (
         <section className="corporate">
@@ -12,6 +16,7 @@ function Corporate() {
                     <h4 className="corporate__delivery-title">Доставка по всей России</h4>
                     <p className="corporate__delivery-info">Компания BUKEDO может организовать для вас доставку сразу в нескольких городах России. Наша цветочная сеть охватывает более 200 городов страны и 1500 окрестных населённых пунктов.</p>
                     <img src={corporateDelivery} alt="photo" className="corporate__delivery-img" />
+                    <img src={corporateDeliveryAdapt} alt="photo" className="corporate__delivery-adapt" />
                 </div>
                 <div className="corporate__discount">
                     <h4 className="corporate__discount-title"></h4>
@@ -25,6 +30,7 @@ function Corporate() {
                     <p className="corporate__settlement-text">Вы сможете оплатить с расчётного счета вашей компании по безналу (по выставленному счёту) или картой. Чтобы получить счёт, нужно оформить заказ (или заказы если доставка в разных городах) и на странице оплаты нажать кнопку «Выставить счёт».
                         <br />Также мы предоставим все необходимые документы: договор оказания услуг и акт выполненных работ. Возможен электронный документооборот через системы «Диадок» и «СБИС».</p>
                     <img src={corporateSettlement} alt="photo" className="corporate__settlement-img" />
+                    <img src={corporateSettlementAdapt} alt="photo" className="corporate__settlement-adapt" />
                 </div>
                 <div className="corporate__how">
                     <h4 className="corporate__how-title">Как получить общий
@@ -42,6 +48,7 @@ function Corporate() {
                     <h4 className="corporate__stylish-title">Стильно и недорого</h4>
                     <p className="corporate__stylish-text">Наши флористы следят за трендами, поэтому в нашем каталоге много современных и стильных букетов, цветов в коробках и корзинах по невысоким ценам.</p>
                     <img src={corporateStylish} alt="photo" className="corporate__stylish-img" />
+                    <img src={corporateStylishAdapt} alt="photo" className="corporate__stylish-adapt" />
                 </div>
                 <div className="corporate__contact">
                     <div className="corporate__contact-block">

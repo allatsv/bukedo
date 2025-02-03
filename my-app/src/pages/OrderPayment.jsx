@@ -87,7 +87,12 @@ function OrderPayment () {
                     <div class="order-payment__create-checks">
                         <div class="order-payment__create-check">
                             <input type="checkbox" id="check-op"/>
-                            <label for="check-op"></label>
+                            <label for="check-op">                    
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.3346 4.6333L6.94411 11.0238C6.42341 11.5445 5.57919 11.5445 5.05849 11.0238L2.66797 8.6333" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </label>
+                            <span>№12133</span>
                         </div>
                         <div class="order-payment__create-check">
                             <input type="checkbox" id="check-op"/>
