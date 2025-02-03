@@ -1,33 +1,23 @@
-
 import { Header } from './components';
 import { Footer } from './components';
 import { Recipient } from './components';
-import { MakeOrder } from './components';
 import { Counter } from './components';
 import { CountersList } from './components';
 import { Cart } from './components';
+import { date } from './date';
 
 
 
-import { Corporate,Bonussystem,Paymentdelivery, Agreement, AboutCompany, OrderPayment, Catalog } from './pages';
+
+import { Corporate,Bonussystem,Paymentdelivery, Agreement, AboutCompany, OrderPayment, Catalog, Order, Main,MakeOrder } from './pages';
 function App() {
+  console.log(date)
   return (
     <div className="App">
+      <MakeOrder/>
 
-        <Header/>
-        <Cart/>
-        <Counter/>
-        <CountersList/>
-          <MakeOrder/>
-          <Recipient/>
-          <Catalog/>
-          <Agreement/>
-          <Corporate/>
-          <Bonussystem/>
-          <Paymentdelivery/> 
-          <AboutCompany/>
-          <OrderPayment/>
-        <Footer/>
+      {  /*<Paymentdelivery data = {date}/> */}
+
     </div>
   );
 }

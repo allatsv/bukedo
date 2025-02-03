@@ -53,13 +53,19 @@
             font-size: 16px;
             line-height: 20.8px;
             padding-top: 24px;
+            display: block;
+          
+            
             &--display {
                 display: none;
             }
         }
         &-minus {
+            min-width: 30px;
+            min-height: 30px;
             &--display {
                 display: none;
+                
             }
         }
     }
@@ -132,7 +138,16 @@
         }
     }
 }
+ .delivery__questions-item--open{
+        border: 1px solid #E5E7EB;
+        box-shadow: 0px 4px 6px -2px #1212170D,
+                    0px 10px 15px -3px #12121714;
+                    border-radius: 16px;    
+                    
+                    
+    }
 
+    
 
 @media (max-width: 960px) {
     .container {
@@ -162,6 +177,7 @@
                 width: 343px;
                 text-align: left;
             }
+            
             &-question {
                 font-size: 18px;
                 line-height: 23.4px;
@@ -169,12 +185,13 @@
             &-answer {
                 font-size: 14px;
                 line-height: 18.2px;
+                
             }
         }
     }
     
     /* PAYMENT */
-    
+   
     .payment {
         padding: 25.5px 0 0 0;
         border-bottom: 0;

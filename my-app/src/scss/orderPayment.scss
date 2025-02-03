@@ -154,31 +154,44 @@
             display: flex;
             column-gap: 12px;
             align-items: center;
-        }
-        &-check span {
-            font-size: 16px;
-            line-height: 20.8px;
+            position: relative;
         }
         &-check input {
             display: none;
         }
         &-check label {
+            position: relative;
+            top: 1px;
             width: 24px;
             height: 24px;
             border: 2px solid $grayText;
             border-radius: 8px;
+            transition: 0.1s ease;
             cursor: pointer;
-            transition: 0.3s all;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            display: block;
         }
-        &-check input:checked + &-check label {
-            background: $pink;
-            border: 2px solid $pink;
+        &-check label:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 8px;
+            width: 7px;
+            height: 14px;
+            opacity: 0;
+            transform: rotate(45deg) scale(0);
+            border-right: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            transition: all 0.3s ease;
+            transition-delay: 0.15s;
         }
-        &-check input:checked + &-check label svg path {
-            animation: check 4s forwards;
+        &-check label:checked {
+            border-color: transparent;
+            background-color: $pink;
+            animation: jelly 0.8s ease;
+        }
+        &-check label:checked &-check label:after {
+            opacity: 1;
+            transform: rotate(45deg) scale(1);
         }
         &-descrip {
             font-size: 16px;

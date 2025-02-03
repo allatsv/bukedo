@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import qa from './../scripts/qa.js';
 import paymentdelivery from "./../assets/img/paymentdelivery.png"
 import plus from "./../assets/icon/plus.svg"
 import minus from "./../assets/icon/minus.svg"
-function Paymentdelivery() {
+
+function Paymentdelivery({ data }) {
+    const [selected, setSelected] = useState()
+    let [isOpen, setOpen] = useState(false);
     return (
+
         <div>
             <section className="payment">
                 <div className="container">
@@ -66,71 +70,39 @@ function Paymentdelivery() {
                     <p className="delivery__decrip">Доставка осуществляется ежедневно с 09:00 до 23:00 ч. в выбранный интервал.</p>
                 </div>
                 <div className="delivery__info">
-                <div className="delivery__img"></div>
-                <div className="delivery__questions">
-                    <button className="delivery__questions-item delivery__questions-item--display">
+                    <div className="delivery__img"></div>
+                    <div className="delivery__questions">
                         <div>
-                            <span className="delivery__questions-question">Стоимость доставки</span>
-                            <span className="delivery__questions-answer delivery__questions-answer--display">Ближайшее время доставки через 2-3 часа после оплаты заказа. Также при оформлении заказа вы можете выбрать другой день и время доставки. Обратите внимание, что в праздничные дни срок доставки на текущее время увеличивается до 4-6 часов.</span>
+                            {
+                                data.map((item, index) => {
+                                    return (
+                                        <button className={`delivery__questions-item ${index === selected ? "delivery__questions-item--open" : ""}`} onClick={() => setSelected(index === selected ? false : index)}>
+                                            <div>
+                                                <span className='delivery__questions-question'>{item.question}</span>
+
+                                                {
+                                                    selected === index && (<span className='delivery__questions-answer'>
+                                                        {item.answer}</span>)
+                                                }
+                                            </div>
+                                            <div>
+                                                {
+                                                    selected === index ? (
+                                                        <img className='delivery__questions-minus' src={minus} alt="minus" />
+                                                    ) : (<img className='delivery__questions-plus' src={plus} alt="plus" />)
+                                                }
+                                            </div>
+                                        </button>
+                                    )
+                                })
+                            }
                         </div>
-                        <img src={plus} alt="plus" className="delivery__questions-plus"/>
-                        <img src={minus} alt="minus" className="delivery__questions-minus delivery__questions-minus--display" style={{display: "none"}}/>
-                    </button>
-                    <button className="delivery__questions-item delivery__questions-item--display">
-                        <div>
-                            <span className="delivery__questions-question">Дата и время доставки</span>
-                            <span className="delivery__questions-answer delivery__questions-answer--display">Ближайшее время доставки через 2-3 часа после оплаты заказа. Также при оформлении заказа вы можете выбрать другой день и время доставки. Обратите внимание, что в праздничные дни срок доставки на текущее время увеличивается до 4-6 часов.</span>
-                        </div>
-                        <img src={plus} alt="plus" className="delivery__questions-plus"/>
-                        <img src={minus} alt="minus" className="delivery__questions-minus delivery__questions-minus--display" style={{display: "none"}}/>
-                    </button>
-                    <button className="delivery__questions-item delivery__questions-item--display">
-                        <div>
-                            <span className="delivery__questions-question">Доставка по области</span>
-                            <span className="delivery__questions-answer delivery__questions-answer--display">Ближайшее время доставки через 2-3 часа после оплаты заказа. Также при оформлении заказа вы можете выбрать другой день и время доставки. Обратите внимание, что в праздничные дни срок доставки на текущее время увеличивается до 4-6 часов.</span>
-                        </div>
-                        <img src={plus} alt="plus" className="delivery__questions-plus"/>
-                        <img src={minus} alt="minus" className="delivery__questions-minus delivery__questions-minus--display" style={{display: "none"}}/>
-                    </button>
-                    <button className="delivery__questions-item delivery__questions-item--display">
-                        <div>
-                            <span className="delivery__questions-question">Не знаю адрес получателя</span>
-                            <span className="delivery__questions-answer delivery__questions-answer--display">Ближайшее время доставки через 2-3 часа после оплаты заказа. Также при оформлении заказа вы можете выбрать другой день и время доставки. Обратите внимание, что в праздничные дни срок доставки на текущее время увеличивается до 4-6 часов.</span>
-                        </div>
-                        <img src={plus} alt="plus" className="delivery__questions-plus"/>
-                        <img src={minus} alt="minus" className="delivery__questions-minus delivery__questions-minus--display" style={{display: "none"}}/>
-                    </button>
-                    <button className="delivery__questions-item delivery__questions-item--display">
-                        <div>
-                            <span className="delivery__questions-question">SMS-уведомление о доставке</span>
-                            <span className="delivery__questions-answer delivery__questions-answer--display">Ближайшее время доставки через 2-3 часа после оплаты заказа. Также при оформлении заказа вы можете выбрать другой день и время доставки. Обратите внимание, что в праздничные дни срок доставки на текущее время увеличивается до 4-6 часов.</span>
-                        </div>
-                        <img src={plus} alt="plus" className="delivery__questions-plus"/>
-                        <img src={minus} alt="minus" className="delivery__questions-minus delivery__questions-minus--display" style={{display: "none"}}/>
-                    </button>
-                    <button className="delivery__questions-item delivery__questions-item--display">
-                        <div>
-                            <span className="delivery__questions-question">Доставка в режимные объекты (офисы, больницы, 
-                                заводы и пр.)</span>
-                            <span className="delivery__questions-answer delivery__questions-answer--display">Ближайшее время доставки через 2-3 часа после оплаты заказа. Также при оформлении заказа вы можете выбрать другой день и время доставки. Обратите внимание, что в праздничные дни срок доставки на текущее время увеличивается до 4-6 часов.</span>
-                        </div>
-                        <img src={plus} alt="plus" className="delivery__questions-plus"/>
-                        <img src={minus} alt="minus" className="delivery__questions-minus delivery__questions-minus--display" style={{display: "none"}}/>
-                    </button>
-                    <button className="delivery__questions-item delivery__questions-item--display">
-                        <div>
-                            <span className="delivery__questions-question">Фото получателя</span>
-                            <span className="delivery__questions-answer delivery__questions-answer--display">Ближайшее время доставки через 2-3 часа после оплаты заказа. Также при оформлении заказа вы можете выбрать другой день и время доставки. Обратите внимание, что в праздничные дни срок доставки на текущее время увеличивается до 4-6 часов.</span>
-                        </div>
-                        <img src={plus} alt="plus" className="delivery__questions-plus"/>
-                        <img src={minus} alt="minus" className="delivery__questions-minus delivery__questions-minus--display" style={{display: "none"}}/>
-                    </button>
+                    </div>
                 </div>
-            </div>
             </section>
-    
+
         </div>
-        
+
 
 
 

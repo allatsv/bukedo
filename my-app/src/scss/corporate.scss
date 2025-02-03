@@ -19,9 +19,6 @@
             border-bottom-right-radius: 24px;
             border-top-right-radius: 24px;
         }
-        &-adapt {
-            display: none;
-        }
         &-title {
             font-size: 32px;
             line-height: 41.6px;
@@ -57,9 +54,6 @@
             right: 0;
             border-top-right-radius: 24px;
             border-bottom-right-radius: 24px;
-        }
-        &-adapt {
-            display: none;
         }
     }
     &__how {
@@ -101,9 +95,6 @@
             left: 0;
             border-bottom-right-radius: 24px;
             border-bottom-left-radius: 24px;
-        }
-        &-adapt {
-            display: none;
         }
     }
     &__contact {
@@ -199,18 +190,11 @@
         }
         &__delivery {
             padding: 30px 24px 323px 24px;
-            height: 519px;
-            width: 343px;
             &-img {
-                display: none;
-            }
-            &-adapt {
-                border-bottom-right-radius: 24px;
-                border-bottom-left-radius: 24px;
-                display: block;
                 position: absolute;
                 bottom: 0;
-                left: 0;
+                right: 0;
+                max-height: 348px;
             }
             &-title {
                 font-size: 22px;
@@ -222,8 +206,6 @@
         }
         &__settlement {
             padding: 30px 24px 226px 24px;
-            height: 656px;
-            width: 343px;
             &-title {
                 font-size: 22px;
                 line-height: 28.6px;
@@ -233,15 +215,8 @@
                 max-width: 295px;
             }
             &-img {
-                display: none;
-            }
-            &-adapt {
-                border-bottom-right-radius: 24px;
-                border-bottom-left-radius: 24px;
-                display: block;
-                position: absolute;
-                bottom: 0;
-                left: 0;
+                top: 0;
+                right: 0;
             }
         }
         &__how {
@@ -264,13 +239,6 @@
                 line-height: 28.6px;
             }
             &-img {
-                display: none;
-            }
-            &-adapt {
-                border-bottom-right-radius: 24px;
-                border-bottom-left-radius: 24px;
-                display: block;
-                position: absolute;
                 bottom: 0;
                 left: 0;
             }

@@ -155,7 +155,12 @@ body {
     }
 }
 
-
+.active {
+    transform: translateY(0);
+    opacity: 1 !important;
+    visibility: visible;
+    display: block !important;
+  }
 .btn-pay{
     color: #AD2950;
     font-size: 16px;
@@ -169,4 +174,346 @@ body {
 .btn-pay-active{
     color: #03A050;
     border-color: #03A050;
+}
+
+.main-btn {
+    padding: 14.5px 35px;
+    border-radius: 12px;
+    background-color: $pink;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20.8px;
+    font-weight: 700;
+}
+.btn-pink {
+    padding: 14.5px 24px;
+    border: 1px solid #FCE7F3;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 20.8px;
+    font-weight: 700;
+    color: $pink;
+}
+.btn-gray {
+    padding: 14.5px 32px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 20.8px;
+}
+.btn-green {
+    padding: 14.5px 24px;
+    border: 1px solid #03A050;
+    color: #03A050;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.8px;
+}
+.btn-black {
+    padding: 15px 24px;
+    background-color: $blackText;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 20.16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.info {
+    padding-bottom: 22.5px;
+    border-bottom: 1px solid $grayBG;
+    margin-bottom: 24px;
+    .main-title {
+        padding-bottom: 24px;
+    }
+    &__inner {
+        display: flex;
+        align-items: center;
+        align-items: center;
+    }
+    &__inner img {
+        border-radius: 16px;
+        width: 150px;
+        height: 150px;
+    }
+    &__address {
+        padding: 0 319px 0 32px;
+        &-address {
+            font-size: 18px;
+            line-height: 23.4px;
+            font-weight: 500;
+            display: flex;
+            column-gap: 16px;
+        }
+        &-map {
+            color: $pink;
+            border-bottom: 1px dashed $pink;
+            max-width: 73px;
+        }
+        &-blocks {
+            display: flex;
+            column-gap: 16px;
+            padding-top: 16px;
+        }
+        &-block {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            width: 296px;
+            padding: 10.5px 24px;
+            background-color: $grayBG;
+            border-radius: 12px;
+        }
+        &-block img {
+            max-width: 24px;
+        }
+        &-point {
+            color: $grayText;
+            padding: 0 8px;
+        }
+        &-span {
+            font-size: 16px;
+            line-height: 20.8px;
+            font-weight: 500;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 20.8px;
+        }
+        &-block:last-child {
+            width: 287px;
+            padding: 14.5px 24px;
+            white-space: nowrap;
+        }
+        &-block:last-child img {
+            margin-right: 8px;
+        }
+    }
+    &__hours {
+        &-flex {
+            display: flex;
+            column-gap: 18px;
+            align-items: flex-start;
+            padding-bottom: 32px;
+        }
+        &-title {
+            font-size: 16px;
+            line-height: 20.8px;
+            font-weight: 500;
+            padding-bottom: 8px;
+        }
+        &-text {
+            font-size: 16px;
+            line-height: 20.8px;
+        }
+    }
+}
+
+.categories {
+    .right {
+        position: absolute;
+        top: 67px;
+        right: -4px;
+    }
+    margin-bottom: 48px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 4px;
+        position: relative;
+    }
+    &__block {
+        padding: 15.5px 8px 5px 8px;
+        border-radius: 16px;
+        text-align: center;
+        width: 140px;
+        height: 140px;
+        &--active {
+            border: 1px solid $pink;
+        }
+        &-title {
+            font-size: 16px;
+            line-height: 20.8px;
+            padding-top: 8px;
+            max-width: 124px;
+            text-align: center;
+            &--active {
+                color: $pink;
+            }
+        }
+    }
+    &__gradient {
+        width: 124px;
+        height: 140px;
+        background: linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 43.4%, rgba(255, 255, 255, 0) 100%);
+        position: absolute;
+        right: 0;
+    }
+}
+
+.products {
+    &__inner {
+        display: flex;
+        column-gap: 24px;
+    }
+    &__product {
+        &-photo {
+            width: 306px;
+            height: 306px;
+            border-radius: 16px;
+            background: url(../../public/photo1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        &-title {
+            font-size: 16px;
+            line-height: 20.8px;
+            font-weight: 500;
+            padding: 16px 0 10px 0;
+        }
+        &-delivery {
+            display: flex;
+            column-gap: 8px;
+            font-size: 14px;
+            line-height: 18.2px;
+            color: $grayText;
+            padding-bottom: 11px;
+        }
+        &-buy {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-buy span {
+            font-size: 20px;
+            line-height: 26px;
+            font-weight: 700;
+        }
+    }
+}
+
+.reviews {
+    .main-title {
+        padding-bottom: 32px;
+    }
+    padding: 80px 0 48.03px 0;
+    background-color: $grayBG;
+    &__rating {
+        display: flex;
+        align-items: baseline;
+        column-gap: 16px;
+        padding-bottom: 24px;
+        &-number {
+            font-size: 42px;
+            line-height: 54.6px;
+            font-weight: 500;
+        }
+        &-stars {
+            display: flex;
+            column-gap: 6px;
+            padding-bottom: 4px;
+        }
+        &-block span {
+            font-size: 16px;
+            line-height: 20.8px;
+        }
+        &-point {
+            color: $grayText;
+        }
+        &-info {
+            display: flex;
+            column-gap: 12px;
+        }
+    }
+    &__preview {
+        display: flex;
+        column-gap: 16px;
+        padding-bottom: 64px;
+        &-imgs {
+            position: relative;
+        }
+        &-others {
+            padding: 44px 22px 41px 26px;
+            border-radius: 8px;
+            background-color: #1C1C1D80;
+            color: #fff;
+            font-size: 18px;
+            line-height: 23.4px;
+            font-weight: 500;
+            position: absolute;
+            right: 0;
+        }
+    }
+    &__preview img {
+        border-radius: 8px;
+        width: 108px;
+        height: 108px;
+        object-fit: cover;
+    }
+    &__blocks {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        .reviews__rating-stars {
+            column-gap: 2px;
+        }
+        .reviews__rating-stars img {
+            width: 16px;
+        }
+    }
+    &__block {
+        width: 416px;
+        height: 401.3px;
+        padding: 24px 24px 48px 24px;
+        border-radius: 16px;
+        background-color: #fff;
+        margin-bottom: 31.97px;
+        &-imgs {
+            display: flex;
+            column-gap: 9px;
+        }
+        &-imgs {
+            text-align: center;
+        }
+        &-imgs span {
+            display: block;
+            font-size: 12px;
+            line-height: 15.6px;
+            color: $grayText;
+        }
+        &-img img {
+            border-radius: 8px;
+            width: 179.5px;
+            height: 179.5px;
+            margin-bottom: 6.53px;
+            object-fit: cover;
+        }
+    }
+    &__autor {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 16px;
+        &-name {
+            font-size: 16px;
+            line-height: 20.8px;
+            font-weight: 500;
+            padding-bottom: 4px;
+        }
+        &-when {
+            font-size: 14px;
+            line-height: 18.2px;
+            color: $grayText;
+        }
+    }
+    &__comment {
+        font-size: 14px;
+        line-height: 18.2px;
+        padding-top: 14px;
+    }
+    &__comment span {
+        color: $grayText;
+    }
 }
