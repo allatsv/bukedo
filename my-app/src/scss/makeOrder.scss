@@ -322,6 +322,9 @@ label{
             line-height: 18.2px;
             padding-bottom: 16px;
         }
+        &-adapt {
+            display: none;
+        }
     }
 }
 
@@ -403,6 +406,12 @@ label{
         .main-btn {
             width: 327px;
         }
+        .btn-gray {
+            white-space: nowrap;
+            width: 155.5px;
+            height: 50px;
+            padding: 14.5px 19px;
+        }
         &__inner {
             display: block;
             column-gap: 0;
@@ -414,7 +423,10 @@ label{
         &__checkbox {
             display: block;
             column-gap: 0;
-            margin-bottom: 18px;
+            margin-bottom: 2px;
+            label {
+                padding-bottom: 16px;
+            }
             &-fake {
                 display: inline-block;
                 width: 24px;
@@ -470,6 +482,7 @@ label{
             &-check {
                 display: flex;
                 column-gap: 12px;
+                padding-top: 16px;
                 input {
                     appearance: none;
                     -webkit-appearance: none;
@@ -509,7 +522,12 @@ label{
             column-gap: 64px;
         }
         &__map {
-            
+            &-map {
+                display: none;
+            }
+            &-adapt {
+                display: block;
+            }
         }
     }
 }

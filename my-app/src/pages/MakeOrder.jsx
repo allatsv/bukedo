@@ -3,6 +3,7 @@ import block1 from "./../assets/img/flower-item.png";
 import block2 from "./../assets/img/photo1.jpg";
 import block3 from "./../assets/img/rafaello.png";
 import map from "./../assets/img/map.png";
+import mapAdapt from "./../assets/img/map-adapt.png";
 
 function MakeOrder() {
     return (
@@ -77,7 +78,8 @@ function MakeOrder() {
                                     <p className="make-order__map-descrip">+7 901 634-66-28</p>
                                 </div>
                             </div>
-                            <img src={map} alt="" />
+                            <img src={map} alt="map" className="make-order__map-map" />
+                            <img src={mapAdapt} alt="map" className="make-order__map-adapt" />
 
 
                         </div>

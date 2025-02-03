@@ -3,31 +3,45 @@ import corporateDelivery from "./../assets/img/corporate-delivery.png"
 import corporateSettlement from "./../assets/img/corporate-settlement.png"
 import corporateStylish from "./../assets/img/corporate-stylish.png"
 import corporateContact from "./../assets/img/corporate-contact.png"
+import corporateDeliveryAdapt from "./../assets/img/corporate-delivery-adapt.png"
+import corporateSettlementAdapt from "./../assets/img/corporate-settlement-adapt.png"
+import corporateStylishAdapt from "./../assets/img/corporate-stylish-adapt.png"
 function Corporate() {
     return (
         <section className="corporate">
             <div className="container">
                 <h3 className="main-title">Корпоративным клиентам</h3>
                 <div className="corporate__delivery">
-                    <h4 className="corporate__delivery-title">Доставка по всей России</h4>
+                    <h4 className="corporate-title">Доставка по всей России</h4>
                     <p className="corporate__delivery-info">Компания BUKEDO может организовать для вас доставку сразу в нескольких городах России. Наша цветочная сеть охватывает более 200 городов страны и 1500 окрестных населённых пунктов.</p>
                     <img src={corporateDelivery} alt="photo" className="corporate__delivery-img" />
+                    <img src={corporateDeliveryAdapt} alt="photo" className="corporate__delivery-adapt" />
                 </div>
                 <div className="corporate__discount">
-                    <h4 className="corporate__discount-title"></h4>
-                    <div className="corporate__discount-info">
-
-                    </div>
+                    <h4 className="corporate-title">Скидки и бонусы</h4>
+                    <ul className="corporate__discount-list">
+                        <li className="corporate__discount-item">Скидки за объём (сумма всех заказов без учёта доставки)</li>
+                        <ul className="corporate__discount-procent">
+                            <li>от 10 000 ₽ — 3%</li>
+                            <li>от 30 000 ₽ — 4%</li>
+                            <li>от 60 000 ₽ — 5%</li>
+                        </ul>
+                        <p className='corporate__discount-attention'>Внимание! Скидка не применяется для заказов, оплаченных промокодами 
+                        или бонусными рублями.</p>
+                        <li className="corporate__discount-item">Бонусные рубли. Для оплаты повторных заказов возвращается 3% от суммы заказа на счёт в личном кабинете.</li>
+                        <li className="corporate__discount-item">Промокоды. Можно получить из email-рассылки с промокодами.</li>
+                    </ul>
                 </div>
                 <div className="corporate__settlement">
-                    <h4 className="corporate__settlement-title">Безналичный расчёт
+                    <h4 className="corporate-title">Безналичный расчёт
                         и документооборот</h4>
                     <p className="corporate__settlement-text">Вы сможете оплатить с расчётного счета вашей компании по безналу (по выставленному счёту) или картой. Чтобы получить счёт, нужно оформить заказ (или заказы если доставка в разных городах) и на странице оплаты нажать кнопку «Выставить счёт».
                         <br />Также мы предоставим все необходимые документы: договор оказания услуг и акт выполненных работ. Возможен электронный документооборот через системы «Диадок» и «СБИС».</p>
                     <img src={corporateSettlement} alt="photo" className="corporate__settlement-img" />
+                    <img src={corporateSettlementAdapt} alt="photo" className="corporate__settlement-adapt" />
                 </div>
                 <div className="corporate__how">
-                    <h4 className="corporate__how-title">Как получить общий
+                    <h4 className="corporate-title">Как получить общий
                         счёт на несколько
                         заказов
                     </h4>
@@ -39,9 +53,10 @@ function Corporate() {
                     </ul>
                 </div>
                 <div className="corporate__stylish">
-                    <h4 className="corporate__stylish-title">Стильно и недорого</h4>
+                    <h4 className="corporate-title">Стильно и недорого</h4>
                     <p className="corporate__stylish-text">Наши флористы следят за трендами, поэтому в нашем каталоге много современных и стильных букетов, цветов в коробках и корзинах по невысоким ценам.</p>
                     <img src={corporateStylish} alt="photo" className="corporate__stylish-img" />
+                    <img src={corporateStylishAdapt} alt="photo" className="corporate__stylish-adapt" />
                 </div>
                 <div className="corporate__contact">
                     <div className="corporate__contact-block">

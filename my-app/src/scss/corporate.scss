@@ -2,6 +2,13 @@
 @import "./fonts";
 
 .corporate {
+    .corporate-title {
+        font-size: 32px;
+        line-height: 41.6px;
+        font-weight: 500;
+        max-width: 416px;
+        padding-bottom: 32px;
+    }
     .main-title {
         padding-bottom: 48px;
         text-align: center;
@@ -19,30 +26,48 @@
             border-bottom-right-radius: 24px;
             border-top-right-radius: 24px;
         }
-        &-title {
-            font-size: 32px;
-            line-height: 41.6px;
-            font-weight: 500;
-            padding-bottom: 32px;
-        }
         &-info {
             font-size: 16px;
             line-height: 20.8px;
             max-width: 416px;
         }
+        &-adapt {
+            display: none;
+        }
+    }
+    &__discount {
+        display: flex;
+        justify-content: space-between;
+        padding: 96px 0;
+        &-procent {
+            li {
+                padding-bottom: 8px;
+                list-style-type: disc;
+            }
+        }
+        &-attention {
+            font-weight: 500;
+            padding: 14px 0 24px 0;
+        }
+        &-list {
+            max-width: 621px;
+            font-size: 16px;
+            line-height: 20.8px
+        }
+        &-item {
+            padding-bottom: 24px;
+            list-style-type: decimal;
+        }
+        &-item:last-child {
+            padding-bottom: 0;
+        }
     }
     &__settlement {
+        height: 400px;
         padding: 60.5px 660px 60.5px 110px;
         border-radius: 24px;
         background-color: $grayBG;
         position: relative;
-        &-title {
-            font-size: 32px;
-            line-height: 41.6px;
-            font-weight: 500;
-            max-width: 526px;
-            padding-bottom: 32px;
-        }
         &-text {
             font-size: 16px;
             line-height: 20.8px;
@@ -55,17 +80,16 @@
             border-top-right-radius: 24px;
             border-bottom-right-radius: 24px;
         }
+        &-adapt {
+            display: none;
+        }
     }
     &__how {
         display: flex;
         justify-content: space-between;
         margin: 96px 0 105px 0;
-        &-title {
-            font-size: 32px;
-            line-height: 41.6px;
-            font-weight: 500;
-            max-width: 303px;
-            padding-top: 21px;
+        .corporate-title {
+            max-width: 370px;
         }
         &-list {
             font-size: 16px;
@@ -74,17 +98,15 @@
         }
     }
     &__stylish {
+        .corporate-title {
+            margin: 0 auto;
+        }
         position: relative;
         padding: 131.5px 387px;
         background-color: $grayBG;
         border-radius: 24px;
         text-align: center;
-        &-title {
-            font-size: 32px;
-            line-height: 41.6px;
-            font-weight: 500;
-            padding-bottom: 32px;
-        }
+        margin-bottom: 96px;
         &-text {
             font-size: 16px;
             line-height: 20.8px;
@@ -95,6 +117,9 @@
             left: 0;
             border-bottom-right-radius: 24px;
             border-bottom-left-radius: 24px;
+        }
+        &-adapt {
+            display: none;
         }
     }
     &__contact {
@@ -183,64 +208,92 @@
     }
 
     .corporate {
+        .corporate-title {
+            font-size: 22px;
+            line-height: 28.6px;
+            font-weight: 500;
+        }
         .main-title {
             padding-bottom: 24px;
             font-size: 41.6px;
             line-height: 41.6px;
         }
         &__delivery {
+            width: 343px;
+            height: 519px;
             padding: 30px 24px 323px 24px;
             &-img {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                max-height: 348px;
-            }
-            &-title {
-                font-size: 22px;
-                line-height: 28.6px;
+                display: none;
             }
             &-info {
                 max-width: 295px;
             }
+            &-adapt {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-bottom-right-radius: 24px;
+                border-bottom-left-radius: 24px;
+            }
+        }
+        &__discount {
+            display: block;
+            padding: 48px 0 78px 0;
+            &-attention {
+                padding: 14px 0 18px 0;
+            }
+            &-list {
+                max-width: 343px;
+                padding-left: 18px;
+            }
+            &-item {
+                padding-bottom: 18px;
+            }
         }
         &__settlement {
+            width: 343px;
+            height: 656px;
             padding: 30px 24px 226px 24px;
-            &-title {
-                font-size: 22px;
-                line-height: 28.6px;
-                max-width: 295px;
-            }
             &-text {
                 max-width: 295px;
             }
             &-img {
-                top: 0;
-                right: 0;
+                display: none;
+            }
+            &-adapt {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                border-bottom-right-radius: 24px;
+                border-bottom-left-radius: 24px;
             }
         }
         &__how {
             display: block;
             margin: 48px 0;
-            &-title {
-                font-size: 22px;
-                line-height: 28.6px;
+            .corporate-title {
                 max-width: 343px;
-                padding-top: 0;
             }
             &-list {
                 max-width: 343px;
             }
         }
         &__stylish {
+            width: 343px;
+            height: 472px;
             padding: 30px 24px 276px 24px;
-            &-title {
-                font-size: 22px;
-                line-height: 28.6px;
-            }
             &-img {
+                display: none;
+            }
+            &-adapt {
+                display: block;
+                position: absolute;
                 bottom: 0;
                 left: 0;
+                border-bottom-right-radius: 24px;
+                border-bottom-left-radius: 24px;
             }
         }
         &__contact {
