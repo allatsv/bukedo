@@ -18,6 +18,8 @@ function App() {
       <Corporate/>
       <AboutCompany/>
       <Agreement/>
+      <Bonussystem/>
+      <OrderPayment/>
 
       {  /*<Paymentdelivery data = {date}/> */}
 

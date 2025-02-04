@@ -206,6 +206,8 @@
             display: block;
             column-gap: 0;
             padding: 24px 11px 24px 16px;
+            width: 327px;
+            height: 645px;
             &-info {
                 max-width: 295px;
             }
@@ -213,10 +215,14 @@
                 font-size: 14px;
                 line-height: 18.2px;
             }
+            &-title {
+                padding-top: 24px;
+            }
         }
         &__block {
             padding: 24px;
             width: 327px;
+            height: 141px;
             margin-bottom: 16px;
             &-title {
                 max-width: 279px;

@@ -18,8 +18,8 @@ function OrderPayment () {
                 <img src={close} alt="close" class="order-payment__close"/>
                 <h4 class="order-payment__title">Оплата заказа</h4>
                 <div class="order-payment__entity">
-                    <button class="order-payment__entity-btn order-payment__entity-btn--active">Физ лицо</button>
-                    <button class="order-payment__entity-btn">Юр. лицо или ИП</button>
+                    <button class="btn-gray">Физ лицо</button>
+                    <button class="btn-gray">Юр. лицо или ИП</button>
                 </div>
                 <div class="order-payment__ways">
                     <h5 class="order-payment__pretitle">Способы оплаты</h5>
@@ -78,8 +78,8 @@ function OrderPayment () {
                 <img src={close} alt="close" class="order-payment__close"/>
                 <h4 class="order-payment__title">Оплата заказа</h4>
                 <div class="order-payment__entity">
-                    <button class="order-payment__entity-btn">Физ лицо</button>
-                    <button class="order-payment__entity-btn order-payment__entity-btn--active">Юр. лицо или ИП</button>
+                    <button class="btn-gray">Физ лицо</button>
+                    <button class="btn-gray">Юр. лицо или ИП</button>
                 </div>
                 <div class="order-payment__create">
                     <h5 class="order-payment__pretitle">Создание счета</h5>
