@@ -12,6 +12,15 @@
     right: 18px !important;
 }
 .recipient {
+    .make-order__info-promo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px;
+        p {
+            border-bottom: 1px dashed $grayText;
+        }
+    }
     .main-btn {
         font-size: 18px;
         line-height: 22.68px;
@@ -123,9 +132,9 @@
         color: $grayText;
     }
     &__check {
-        padding-bottom: 16px;
         display: flex;
         column-gap: 12px;
+        margin-bottom: 24px;
         &-agree {
             padding: 24px 0 0 0 !important;
         }
@@ -145,7 +154,7 @@
         }
         label {
             font-size: 16px;
-            line-height: 20.8px;
+            line-height: 20.8pxpx;
             span {
                 font-weight: 700;
             }
@@ -159,6 +168,73 @@
         display: block;
     }
     &__check:last-child {
-        padding-bottom: 24px;
+        padding-bottom: 0;
+    }
+}
+
+
+@media (max-width: 1285px) {
+    .container {
+        width: 327px;
+    }
+    .make-order__info {
+        display: none;
+    }
+    .btn-gray {
+        width: 155.5px;
+        height: 50px;
+        font-size: 14px;
+        line-height: 18.2px;
+        padding: 7.5px 32px;
+    }
+    svg{
+        top: 16px;
+        right: 26px;
+    }
+    .calendar-svg{
+        top: 10px !important;
+        right: 18px !important;
+    }
+    .recipient {
+        .main-btn {
+            width: 327px;
+        }
+        &__inner {
+            display: block;
+        }
+        &__person {
+            display: block;
+            column-gap: 0;
+            padding-bottom: 0;
+        }
+        &__person input {
+            width: 327px;
+            margin-bottom: 24px;
+        }
+        &__cards {
+            textarea {
+                width: 327px;
+                height: 116px;
+            }
+            &-counter button {
+                width: 40px;
+            }
+        }
+        &__email {
+            input {
+                width: 327px;
+            }
+        }
+        &__special {
+            padding-bottom: 48px;
+            textarea {
+                width: 327px;
+            }
+        }
+        &__check {
+            label {
+                width: 214px;
+            }
+        }
     }
 }

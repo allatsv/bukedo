@@ -53,6 +53,7 @@
     }
 }
 
+
 @media (max-width: 960px) {
     .container {
         width: 343px;
@@ -91,6 +92,42 @@
         }
         &__item:last-child {
             margin-bottom: 48px;
+        }
+    }
+}
+
+@media (min-width: 961px) and (max-width:1280px) {
+    .container {
+        width: 864px;
+    }
+    .about-company {
+        &__how {
+            display: block;
+            column-gap: 0;
+        }
+        &__info {
+            width: 700px;
+        }
+        &__info p:last-child {
+            padding-bottom: 32px;
+        }
+        &__item {
+            display: flex;
+            column-gap: 0;
+            width: 550px;
+        }
+        &__item:last-child {
+            margin-bottom: 0;
+        }
+        &__item h5 {
+            font-size: 22px;
+            line-height: 28.6px;
+            font-weight: 700;
+            padding-bottom: 16px;
+        }
+        &__item p {
+            font-size: 16px;
+            line-height: 20.8px;
         }
     }
 }

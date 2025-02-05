@@ -20,6 +20,7 @@ function App() {
       <Agreement/>
       <Bonussystem/>
       <Order/>
+      <Recipient/>
       {  /*<Paymentdelivery data = {date}/> */}
 
     </div>

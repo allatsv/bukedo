@@ -205,12 +205,6 @@
         .order-number__pretitle {
             padding-bottom: 18px;
         }
-        &-title {
-            font-size: 18px;
-            line-height: 23.4px;
-            font-weight: 700;
-            padding-bottom: 18px;
-        }
         &-descrip {
             font-size: 14px;
             line-height: 18.2px;
@@ -436,50 +430,20 @@
 }
 
 
-// @media (min-width: 768px) and (max-width: 1280px) {}
 
-@media (max-width: 767px) {
+@media (max-width: 1280px) {
     .container {
         width: 375px;
     }
-
+    .btn-black {
+        width: 279px;
+    }
+    .main-btn {
+        padding: 14.5px 28px;
+    }
     .order-number {
-        .reviews__block-img {
-            img {
-                width: 196px;
-                height: 196px;
-            }
-        }
-        .reviews__block-imgs {
-            column-gap: 24px;
-        }
-        .reviews__block {
-            padding: 0;
-            padding-top: 18px;
-        }
-        .reviews__bottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 18px;
-        }
-        .btn-gray {
-            font-size: 14px;
-            line-height: 18.2px;
-            padding: 11px 16px;
-            width: 169px;
-            height: 40px;
-            white-space: nowrap;
-        }
-        .btn-green {
-            width: 170px;
-            height: 50px;
-            white-space: nowrap;
-            margin-bottom: 48px;
-        }
-        .main-btn {
-            width: 327px;
-            padding: 14.5px 99px;
+        &__review {
+            display: none;
         }
         &__inner {
             display: block;
@@ -492,70 +456,14 @@
             }
         }
         &__structure {
-            padding: 32px 24px;
-            background-color: $grayBG;
-            border-radius: 24px;
-            height: 352.91px;
-            width: 306px;
-            &-title {
-                font-size: 18px;
-                line-height: 23.4px;
-                font-weight: 700;
-                padding-bottom: 24px;
-            }
-            &-product {
-                display: flex;
-                justify-content: space-between;
-                column-gap: 16px;
-                font-size: 14px;
-                line-height: 18.2px;
-                padding-bottom: 16.91px;
-                border-bottom: 1px solid #E5E7EB;
-                margin-bottom: 16px;
-                img {
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 12px;
-                }
-                div {
-                    width: 192px;
-                }
-            }
-            &-flex {
-                display: flex;
-                justify-content: space-between;
-            }
-            &-name {
-                font-size: 14px;
-                line-height: 18.2px;
-                font-weight: 500;
-                padding-bottom: 8px;
-            }
-            &-block {
-                display: flex;
-                justify-content: space-between;
-                font-size: 14px;
-                line-height: 18.2px;
-                padding-bottom: 10px;
-                span {
-                    font-weight: 500;
-                }
-            }
-            &-result {
-                display: flex;
-                justify-content: space-between;
-                padding-top: 14.5px;
-                font-size: 18px;
-                line-height: 23.4px;
-                font-weight: 700;
-            }
-            &-plus {
-                color: #03A050;
-            }
+            margin-bottom: 50px;
+            height: 324.99px;
+            width: 327px;
         }
         &__confirm {
             &--ready {
                 height: 87px;
+                margin: 8px 0 48px 0;
             }
             width: 327px;
             height: 299px;
@@ -582,63 +490,30 @@
         }
         &__delivery {
             .order-number__pretitle {
-                padding-bottom: 26px;
+                padding-bottom: 16px;
             }
+            padding-bottom: 48px;
             &-item {
-                display: flex;
-                column-gap: 4px;
-                font-size: 16px;
-                line-height: 20.8px;
-                padding-bottom: 8px;
+                font-size: 14px;
+                line-height: 18.2px;
                 p {
-                    color: $grayText;
-                    width: 140px;
+                    width: 105px;
                 }
-            }
-            &-item:last-child {
-                padding-bottom: 0;
             }
         }
         &__card {
-            .order-number__pretitle {
-                padding-bottom: 18px;
-            }
-            padding: 48px 0;
+            padding: 0 0 48px 0;
             &-item {
-                font-size: 16px;
-                line-height: 20.8px;
-                width: 416px;
+                width: 327px;
                 height: 53px;
-                background-color: $grayBG;
-                border-radius: 12px;
-                padding: 16px 24px;
-            }
-        }
-        &__edit {
-            .order-number__pretitle {
-                padding-bottom: 18px;
-            }
-            &-title {
-                font-size: 18px;
-                line-height: 23.4px;
-                font-weight: 700;
-                padding-bottom: 18px;
-            }
-            &-descrip {
-                font-size: 14px;
-                line-height: 18.2px;
-                padding-bottom: 18px;
             }
         }
         &__btns {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display: block;
+            padding-bottom: 48px;
             &-cancel {
-                font-size: 16px;
-                line-height: 20.8px;
-                color: $grayText;
-                border-bottom: 1px dashed $grayText;
+                width: 117px;
+                margin-top: 26px;
             }
         }
         &__info {
@@ -660,12 +535,8 @@
             }
         }
         &__pay {
-            padding-top: 48px;
-            &-info {
-                font-size: 14px;
-                line-height: 18.2px;
-                padding-top: 18px;
-            }
+            padding-bottom: 48px;
+            padding-top: 0;
         }
     }
     
@@ -677,99 +548,9 @@
         &__person {
             display: none;
         }
-        &__info {
-            .btn-gray {
-                width: 416px;
-                height: 50px;
-                margin-top: 24px;
-            }
-            .main-title {
-                padding-bottom: 32px;
-            }
-            width: 416px;
-            &-tel {
-                padding: 16px 24px;
-                background-color: $grayBG;
-                border-radius: 16px;
-                width: 416px;
-                height: 87px;
-                margin-bottom: 24px;
-                div {
-                    display: flex;
-                    justify-content: space-between;
-                }
-                p {
-                    font-size: 22px;
-                    line-height: 28.6px;
-                    font-weight: 500;
-                }
-                h6 {
-                    font-size: 14px;
-                    line-height: 18.2px;
-                    padding-bottom: 8px;
-                    color: $grayText;
-                }
-            }
-            &-notnecessarily {
-                font-size: 14px;
-                line-height: 18.2px;
-                color: $grayText;
-                padding-bottom: 48px;
-            }
-        }
         &__field {
-            padding-bottom: 24px;
-            &-div {
-                position: relative;
-            }
             &-input {
-                padding: 10px;
-                padding-left: 24px;
-                width: 368px;
-                height: 50px;
-                box-sizing: border-box;
-                outline: none;
-                border: 1px solid $grayText;
-                border-radius: 12px;
-            }
-            &-label {
-                position: absolute;
-                top: 14px;
-                left: 24px;
-                font-size: 16px;
-                line-height: 20.8px;
-                color: $grayText;
-                transition: 0.3s;
-                pointer-events: none;
-            }
-            &-input:focus + &-label {
-                top: 5px;
-                font-size: 12px;
-                line-height: 15.6px;
-            }
-        }
-        &__field:last-child {
-            padding-bottom: 8px;
-        }
-        &__password {
-            &-title {
-                font-size: 18px;
-                line-height: 23.4px;
-                font-weight: 700;
-                padding-bottom: 18px;
-            }
-            &-input {
-                width: 416px;
-                height: 50px;
-                padding-left: 24px;
-                border: 1px solid $grayText;
-                border-radius: 12px;
-                font-size: 16px;
-                line-height: 20.8px;
-                margin-bottom: 24px;
-            }
-            &-input::placeholder {
-                color: $grayText;
+                width: 279px;
             }
         }
     }
