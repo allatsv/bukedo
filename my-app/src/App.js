@@ -19,8 +19,7 @@ function App() {
       <AboutCompany/>
       <Agreement/>
       <Bonussystem/>
-      <OrderPayment/>
-
+      <Order/>
       {  /*<Paymentdelivery data = {date}/> */}
 
     </div>

@@ -1,16 +1,23 @@
 import React from 'react'
+import myData from "./../assets/img/my-data.png"
+import checkGreen from "./../assets/icon/check-green.svg"
+import review2 from "./../assets/img/photo1.jpg"
+import star from "./../assets/icon/star.svg"
+import structure from "./../assets/img/flower-item.png"
+import before from "./../assets/img/reviews6.png"
 
 function Order () {
     return (
         <div>
-            <section class="order-number">
+            
+    <section class="order-number">
         <div class="container">
             <div class="order-number__inner">
                 <div class="my-data__person">
                     <p class="my-data__person-name">Михаил</p>
                     <p class="my-data__person-tel">+7 985 555 25 64</p>
                     <div class="my-data__person-points">
-                        <img src="img/my-data.png" alt="photo"/>
+                        <img src={myData} alt="photo"/>
                         <div>
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="1" y="1" width="28" height="28" rx="14" stroke="white" stroke-width="2"/>
@@ -33,14 +40,14 @@ function Order () {
                         </clipPath>
                         </defs>
                         </svg>
-                        <p>Заказы</p>
+                        <a href="#">Заказы</a>
                     </div></a>
                     <a href="#"><div class="my-data__person-item">
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.75" y="1.25" width="14.5" height="14.5" rx="7.25" stroke="#1C1C1D" stroke-width="1.5"/>
                         <path d="M5.80056 11.0943H4.71484V10.2486H5.80056V9.48286H4.71484V8.52286H5.80056V4.5H8.31484C9.34342 4.5 10.0939 4.72095 10.5663 5.16286C11.0463 5.59714 11.2863 6.20667 11.2863 6.99143C11.2863 7.76095 11.0425 8.37048 10.5548 8.82C10.0748 9.2619 9.32818 9.48286 8.31484 9.48286H6.87484V10.2486H9.57199V11.0943H6.87484V12.5H5.80056V11.0943ZM6.87484 5.48286V8.52286H8.31484C8.99294 8.52286 9.47294 8.39714 9.75484 8.14571C10.0367 7.89429 10.1777 7.51333 10.1777 7.00286C10.1777 6.5 10.0329 6.12286 9.74342 5.87143C9.46151 5.61238 8.98532 5.48286 8.31484 5.48286H6.87484Z" fill="#1C1C1D"/>
                         </svg>
-                        <p>Бонусная система</p>
+                        <a href="#">Бонусная система</a>
                     </div></a>
                     <a href="#"><div class="my-data__person-item">                
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -129,9 +136,43 @@ function Order () {
                     <a href="#" class="order-number__btns-cancel">Отменить заказ</a>
                 </div>
                 </div>
+                <div className="order-number__structure">
+                    <p className="order-number__structure-title">Состав заказа</p>
+                    <div className="order-number__structure-product">
+                        <img src={structure} alt="photo" />
+                        <div>
+                            <p className="order-number__structure-name">Сиреневый плайм</p>
+                            <div className='order-number__structure-flex'>
+                                <p className="order-number__structure-quantity">1x</p>
+                                <p className="order-number__structure-amount">5 786 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="order-number__structure-block">
+                        <p>Сумма</p>
+                        <span>5 786 ₽</span>
+                    </div>
+                    <div className="order-number__structure-block">
+                        <p>Срочная доставка</p>
+                        <span>200 ₽</span>
+                    </div>
+                    <div className="order-number__structure-block">
+                        <p>Фото с получателем</p>
+                        <span>90 ₽</span>
+                    </div>
+                    <div className="order-number__structure-block">
+                        <p>Бонусы</p>
+                        <span className='order-number__structure-plus'>+157</span>
+                    </div>
+                    <div className="order-number__structure-result">
+                        <p>Итого</p>
+                        <p>5 986 ₽</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
     <section class="order-number">
         <div class="container">
             <div class="order-number__inner">
@@ -139,7 +180,7 @@ function Order () {
                     <p class="my-data__person-name">Михаил</p>
                     <p class="my-data__person-tel">+7 985 555 25 64</p>
                     <div class="my-data__person-points">
-                        <img src="img/my-data.png" alt="photo"/>
+                        <img src={myData} alt="photo"/>
                         <div>
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="1" y="1" width="28" height="28" rx="14" stroke="white" stroke-width="2"/>
@@ -162,20 +203,20 @@ function Order () {
                         </clipPath>
                         </defs>
                         </svg>
-                        <p>Заказы</p>
+                        <a href="#">Заказы</a>
                     </div></a>
                     <a href="#"><div class="my-data__person-item">
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.75" y="1.25" width="14.5" height="14.5" rx="7.25" stroke="#1C1C1D" stroke-width="1.5"/>
                         <path d="M5.80056 11.0943H4.71484V10.2486H5.80056V9.48286H4.71484V8.52286H5.80056V4.5H8.31484C9.34342 4.5 10.0939 4.72095 10.5663 5.16286C11.0463 5.59714 11.2863 6.20667 11.2863 6.99143C11.2863 7.76095 11.0425 8.37048 10.5548 8.82C10.0748 9.2619 9.32818 9.48286 8.31484 9.48286H6.87484V10.2486H9.57199V11.0943H6.87484V12.5H5.80056V11.0943ZM6.87484 5.48286V8.52286H8.31484C8.99294 8.52286 9.47294 8.39714 9.75484 8.14571C10.0367 7.89429 10.1777 7.51333 10.1777 7.00286C10.1777 6.5 10.0329 6.12286 9.74342 5.87143C9.46151 5.61238 8.98532 5.48286 8.31484 5.48286H6.87484Z" fill="#1C1C1D"/>
                         </svg>
-                        <p>Бонусная система</p>
+                        <a href="#">Бонусная система</a>
                     </div></a>
                     <a href="#"><div class="my-data__person-item">                
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.52936 15.012C7.8267 15.1667 8.17336 15.1667 8.4707 15.012C10.0414 14.1934 15 11.224 15 6.39735C15.008 4.27735 13.296 2.55069 11.1734 2.53735C9.89603 2.55335 8.70936 3.19735 8.00003 4.25735C7.28936 3.19735 6.1027 2.55335 4.82669 2.53735C2.70403 2.55069 0.992028 4.27602 1.00003 6.39735C1.00003 11.224 5.96003 14.192 7.52936 15.012Z" stroke="#1C1C1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <p>Избранное</p>
+                        <a href="#">Избранное</a>
                     </div></a>
                     <a href="#"><div class="my-data__person-item">                  
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -190,7 +231,7 @@ function Order () {
                         </clipPath>
                         </defs>
                         </svg>
-                        <p>Мои данные</p>
+                        <a href="#">Мои данные</a>
                     </div></a>
                     <a href="#"><div class="my-data__person-item">                   
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -206,7 +247,7 @@ function Order () {
                         </clipPath>
                         </defs>
                         </svg>
-                        <p>Выйти</p>
+                        <a href="#">Выйти</a>
                     </div></a>
                 </div>
                 <div class="order-number__info">
@@ -218,12 +259,12 @@ function Order () {
                     <h6 class="order-number__confirm-title">Телефон подтвержден</h6>
                     <div class="order-number__confirm-number">
                         <p>+7 985 555 25 64</p>
-                        <img src="icon/check-green.svg" alt="check"/>
+                        <img src={checkGreen} alt="check"/>
                     </div>
                 </div>
                 <div class="order-number__before">
                     <h5 class="order-number__pretitle">Фото до доставки</h5>
-                    <img class="order-number__before-img" src="img/reviews6.png" alt="photo"/>
+                    <img src={before} alt="photo" />
                 </div>
                 <div class="order-number__delivery">
                     <h5 class="order-number__pretitle">Доставка и получатель</h5>
@@ -253,17 +294,51 @@ function Order () {
                     <div class="order-number__card-item">Поздравляю с Днём Рождения!</div>
                 </div>
                 </div>
+                <div className="order-number__structure">
+                    <p className="order-number__structure-title">Состав заказа</p>
+                    <div className="order-number__structure-product">
+                        <img src={structure} alt="photo" />
+                        <div>
+                            <p className="order-number__structure-name">Сиреневый плайм</p>
+                            <div className='order-number__structure-flex'>
+                                <p className="order-number__structure-quantity">1x</p>
+                                <p className="order-number__structure-amount">5 786 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="order-number__structure-block">
+                        <p>Сумма</p>
+                        <span>5 786 ₽</span>
+                    </div>
+                    <div className="order-number__structure-block">
+                        <p>Срочная доставка</p>
+                        <span>200 ₽</span>
+                    </div>
+                    <div className="order-number__structure-block">
+                        <p>Фото с получателем</p>
+                        <span>90 ₽</span>
+                    </div>
+                    <div className="order-number__structure-block">
+                        <p>Бонусы</p>
+                        <span className='order-number__structure-plus'>+157</span>
+                    </div>
+                    <div className="order-number__structure-result">
+                        <p>Итого</p>
+                        <p>5 986 ₽</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
     <section class="order-number">
         <div class="container">
             <div class="order-number__inner">
-                <div class="my-data__person">
+            <div class="my-data__person">
                     <p class="my-data__person-name">Михаил</p>
                     <p class="my-data__person-tel">+7 985 555 25 64</p>
                     <div class="my-data__person-points">
-                        <img src="img/my-data.png" alt="photo"/>
+                        <img src={myData} alt="photo"/>
                         <div>
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="1" y="1" width="28" height="28" rx="14" stroke="white" stroke-width="2"/>
@@ -286,20 +361,20 @@ function Order () {
                         </clipPath>
                         </defs>
                         </svg>
-                        <p>Заказы</p>
+                        <a href="#">Заказы</a>
                     </div></a>
                     <a href="#"><div class="my-data__person-item">
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.75" y="1.25" width="14.5" height="14.5" rx="7.25" stroke="#1C1C1D" stroke-width="1.5"/>
                         <path d="M5.80056 11.0943H4.71484V10.2486H5.80056V9.48286H4.71484V8.52286H5.80056V4.5H8.31484C9.34342 4.5 10.0939 4.72095 10.5663 5.16286C11.0463 5.59714 11.2863 6.20667 11.2863 6.99143C11.2863 7.76095 11.0425 8.37048 10.5548 8.82C10.0748 9.2619 9.32818 9.48286 8.31484 9.48286H6.87484V10.2486H9.57199V11.0943H6.87484V12.5H5.80056V11.0943ZM6.87484 5.48286V8.52286H8.31484C8.99294 8.52286 9.47294 8.39714 9.75484 8.14571C10.0367 7.89429 10.1777 7.51333 10.1777 7.00286C10.1777 6.5 10.0329 6.12286 9.74342 5.87143C9.46151 5.61238 8.98532 5.48286 8.31484 5.48286H6.87484Z" fill="#1C1C1D"/>
                         </svg>
-                        <p>Бонусная система</p>
+                        <a href="#">Бонусная система</a>
                     </div></a>
                     <a href="#"><div class="my-data__person-item">                
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7.52936 15.012C7.8267 15.1667 8.17336 15.1667 8.4707 15.012C10.0414 14.1934 15 11.224 15 6.39735C15.008 4.27735 13.296 2.55069 11.1734 2.53735C9.89603 2.55335 8.70936 3.19735 8.00003 4.25735C7.28936 3.19735 6.1027 2.55335 4.82669 2.53735C2.70403 2.55069 0.992028 4.27602 1.00003 6.39735C1.00003 11.224 5.96003 14.192 7.52936 15.012Z" stroke="#1C1C1D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
-                        <p>Избранное</p>
+                        <a href="#">Избранное</a>
                     </div></a>
                     <a href="#"><div class="my-data__person-item">                  
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -314,7 +389,7 @@ function Order () {
                         </clipPath>
                         </defs>
                         </svg>
-                        <p>Мои данные</p>
+                        <a href="#">Мои данные</a>
                     </div></a>
                     <a href="#"><div class="my-data__person-item">                   
                         <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -330,7 +405,7 @@ function Order () {
                         </clipPath>
                         </defs>
                         </svg>
-                        <p>Выйти</p>
+                        <a href="#">Выйти</a>
                     </div></a>
                 </div>
                 <div class="order-number__info">
@@ -371,21 +446,21 @@ function Order () {
                     <div class="reviews__block">
                         <div class="reviews__block-imgs">
                             <div class="reviews__block-img">
-                                <img src="img/photo1.jpg" alt="photo"/>
+                                <img src={review2} alt="photo"/>
                                 <span>Ваше фото</span>
                             </div>
                             <div class="reviews__block-img">
-                                <img src="img/reviews6.png" alt="photo"/>
+                                <img src={before} alt="photo"/>
                                 <span>Фото до доставки</span>
                             </div>
                         </div>
                         <div class="reviews__autor">
                             <div class="reviews__rating-stars">
-                                <img src="icon/star.svg" alt="star"/>
-                                <img src="icon/star.svg" alt="star"/>
-                                <img src="icon/star.svg" alt="star"/>
-                                <img src="icon/star.svg" alt="star"/>
-                                <img src="icon/star.svg" alt="star"/>
+                                <img src={star} alt="star"/>
+                                <img src={star} alt="star"/>
+                                <img src={star} alt="star"/>
+                                <img src={star} alt="star"/>
+                                <img src={star} alt="star"/>
                             </div>
                         </div>
                         <p class="reviews__comment">Заказываю уже не первый год, всё великолепно, цветы стоят долго, есть ассортимент на любой бюджет и повод, доставка вовремя, курьеры вежливые.</p>
@@ -395,6 +470,39 @@ function Order () {
                         </div>
                     </div>
                 </div>
+                </div>
+                <div className="order-number__structure">
+                    <p className="order-number__structure-title">Состав заказа</p>
+                    <div className="order-number__structure-product">
+                        <img src={structure} alt="photo" />
+                        <div>
+                            <p className="order-number__structure-name">Сиреневый плайм</p>
+                            <div className='order-number__structure-flex'>
+                                <p className="order-number__structure-quantity">1x</p>
+                                <p className="order-number__structure-amount">5 786 ₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="order-number__structure-block">
+                        <p>Сумма</p>
+                        <span>5 786 ₽</span>
+                    </div>
+                    <div className="order-number__structure-block">
+                        <p>Срочная доставка</p>
+                        <span>200 ₽</span>
+                    </div>
+                    <div className="order-number__structure-block">
+                        <p>Фото с получателем</p>
+                        <span>90 ₽</span>
+                    </div>
+                    <div className="order-number__structure-block">
+                        <p>Бонусы</p>
+                        <span className='order-number__structure-plus'>+157</span>
+                    </div>
+                    <div className="order-number__structure-result">
+                        <p>Итого</p>
+                        <p>5 986 ₽</p>
+                    </div>
                 </div>
             </div>
         </div>

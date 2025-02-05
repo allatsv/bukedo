@@ -15,6 +15,7 @@ import './scss/recipient.scss'
 import './scss/makeOrder.scss'
 import './scss/cart.scss'
 import './scss/categories.scss'
+import './scss/order.scss'
 import App from './App';
 
 
