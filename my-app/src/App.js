@@ -15,12 +15,7 @@ function App() {
   return (
     <div className="App">
       <MakeOrder/>
-      <Corporate/>
-      <AboutCompany/>
-      <Agreement/>
-      <Bonussystem/>
-      <Order/>
-      <Recipient/>
+
       {  /*<Paymentdelivery data = {date}/> */}
 
     </div>

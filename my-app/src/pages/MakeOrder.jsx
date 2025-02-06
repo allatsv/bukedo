@@ -5,17 +5,10 @@ import block3 from "./../assets/img/rafaello.png";
 import map from "./../assets/img/map.png";
 import mapAdapt from "./../assets/img/map-adapt.png";
 
-function MakeOrder() {
-    return (
-        <section className="make-order">
-            <div className="container">
-                <div className="make-order__inner">
-                    <div className="make-order__fields">
-                        <div className="make-order__btns">
-                            <button className="btn-gray btn-gray--active">Адрес доставки</button>
-                            <button className="btn-gray">Самовывоз</button>
-                        </div>
-                        <div className="make-order__checkbox">
+function AdressDelivery(){
+    return(
+        <div>
+            <div className="make-order__checkbox">
                             <label>
                                 <input className="make-order__checkbox-input" name="adress" id="adress1" type="radio" />
                                 <span className="make-order__checkbox-fake"></span>
@@ -60,15 +53,13 @@ function MakeOrder() {
                             </div>
                             
                         </div>
-                        <div className="make-order__tell">
-                            <p className="make-order__tell-title">Ваш телефон</p>
-                            <input placeholder="+7 (" type="tell" />
-                        </div>
-                        <button className="main-btn">Продолжить</button>
+        </div>
 
-                        <h3 className="make-order__title">Адрес доставки</h3>
-
-                        <div className="make-order__map">
+    )
+}
+function Pickup(){
+    return(
+        <div className="make-order__map">
                             <p className="make-order__map-address">г. Москва, Нижегородская, 25</p>
                             <div className="make-order__map-info">
                                 <div>
@@ -80,12 +71,8 @@ function MakeOrder() {
                                     <p className="make-order__map-descrip">+7 901 634-66-28</p>
                                 </div>
                             </div>
-                            <img src={map} alt="map" className="make-order__map-map" />
-                            <img src={mapAdapt} alt="map" className="make-order__map-adapt" />
-
-
-                        </div>
-                        <div className="make-order__date">
+                            <img src={map} alt="" />
+                            <div className="make-order__date">
                         <p className="make-order__date-title">Когда заберете заказ</p>
                             <div className="make-order__date-inner">
                                 <div className="input-inner">
@@ -98,6 +85,34 @@ function MakeOrder() {
                             </div>
                             
                         </div>
+
+                        </div>
+    )
+}
+function MakeOrder() {
+    return (
+        <section className="make-order">
+            <div className="container">
+                <div className="make-order__inner">
+                    <div className="make-order__fields">
+                        <div className="make-order__btns">
+                            <button className="btn-gray btn-gray--active">Адрес доставки</button>
+                            <button className="btn-gray">Самовывоз</button>
+                        </div>
+        
+                        <AdressDelivery/>
+                        <Pickup/>
+                        
+                        
+                        
+                        <div className="make-order__tell">
+                            <p className="make-order__tell-title">Ваш телефон</p>
+                            <input placeholder="+7 (" type="tell" />
+                        </div>
+                        <button className="main-btn">Продолжить</button>
+
+                        
+                        
                     </div>
                     <div className="make-order__info">
                         <p className="make-order__info-title">Ваш заказ</p>
@@ -146,5 +161,4 @@ function MakeOrder() {
         </section>
     )
 }
-
 export default MakeOrder;
