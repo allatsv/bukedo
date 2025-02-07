@@ -31,6 +31,8 @@ const fetchPosts = subreddit => dispatch => {
     .then(response => response.json())
     .then(json => dispatch(receivePosts(subreddit, json)))
 }
+const isEvent = (candidate: any) =>
+  !!(candidate && candidate.stopPropagation && candidate.preventDefault)
 
 const shouldFetchPosts = (state, subreddit) => {
   const posts = state.postsBySubreddit[subreddit]
@@ -48,3 +50,70 @@ export const fetchPostsIfNeeded = subreddit => (dispatch, getState) => {
     return dispatch(fetchPosts(subreddit))
   }
 }
+
+import React from 'react'
+import PropTypes from 'prop-types'
+
+const Picker = ({ value, onChange, options }) => (
+  <span>
+    <h1>{value}</h1>
+    <select onChange={e => onChange(e.target.value)} value={value}>
+      {options.map(option => (
+        <option value={option} key={option}>
+          {option}
+        </option>
+      ))}
+    </select>
+  </span>
+)
+
+Picker.propTypes = {
+  options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired
+}
+const getSelectedValues = options => {
+  const result = []
+  if (options) {
+    for (let index = 0; index < options.length; index++) {
+      const option = options[index]
+      if (option.selected) {
+        result.push(option.value)
+      }
+    }
+  }
+  return result
+}
+
+const getValue = (event: Event, isReactNative: ?boolean) => {
+  if (isEvent(event)) {
+    if (
+      !isReactNative &&
+      event.nativeEvent &&
+      event.nativeEvent.text !== undefined
+    ) {
+      return event.nativeEvent.text
+    }
+    if (isReactNative && event.nativeEvent !== undefined) {
+      return event.nativeEvent.text
+    }
+    const detypedEvent: any = event
+    const {
+      target: { type, value, checked, files },
+      dataTransfer
+    } = detypedEvent
+    if (type === 'checkbox') {
+      return !!checked
+    }
+    if (type === 'file') {
+      return files || (dataTransfer && dataTransfer.files)
+    }
+    if (type === 'select-multiple') {
+      return getSelectedValues(event.target.options)
+    }
+    return value
+  }
+  return event
+}
+
+export default Pickers
