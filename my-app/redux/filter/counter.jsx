@@ -66,7 +66,51 @@ const Picker = ({ value, onChange, options }) => (
     </select>
   </span>
 )
+export type Props = {
+  name: string,
+  children?: Node,
+  component: Function | string,
+  forwardRef?: boolean,
+  _reduxForm: Context,
+  rerenderOnEveryChange?: boolean,
+  validate?: { (value: any, allValues: Object, props: Object): any },
+  warn?: { (value: any, allValues: Object, props: Object): any },
 
+  // same as Props in createFieldArrayProps.js:
+  arrayInsert: { (index: number, value: any): void },
+  arrayMove: { (from: number, to: number): void },
+  arrayPop: { (): any },
+  arrayPush: { (value: any): void },
+  arrayRemove: { (index: number): void },
+  arrayRemoveAll: { (): void },
+  arrayShift: { (): any },
+  arraySplice: { (index: number, removeNum: number | null, value: any): void },
+  arraySwap: { (from: number, to: number): void },
+  arrayUnshift: { (value: any): void },
+  asyncError: any,
+  dirty: boolean,
+  length: number,
+  pristine: boolean,
+  submitError: any,
+  state: Object,
+  submitFailed: boolean,
+  submitting: boolean,
+  syncError: any,
+  syncWarning: any,
+  value: any[],
+  props?: Object
+}
+
+export type DefaultProps = {
+  rerenderOnEveryChange: boolean
+}
+
+type Api = {
+  dirty: boolean,
+  getRenderedComponent: { (): Component<any, any> },
+  pristine: boolean,
+  value: ?(any[])
+}
 Picker.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   value: PropTypes.string.isRequired,
@@ -109,11 +153,41 @@ const getValue = (event: Event, isReactNative: ?boolean) => {
       return files || (dataTransfer && dataTransfer.files)
     }
     if (type === 'select-multiple') {
-      return getSelectedValues(event.target.options)
+
     }
     return value
   }
   return event
 }
+const onChangeValue = (
+  event: Event,
+  {
+    name,
+    parse,
+    normalize
+  }: { name: string, parse?: Function, normalize?: Function }
+)
+  let value = getValue(event, isReactNative)
 
+  if (parse) {
+    value = parse(value, name)
+  }
+
+
+  if (normalize) {
+    value = normalize(name, value)
+  }
+
+  return value
+}
+
+const silenceEvents = (fn: Function) => (event: any, ...args: Array<any>) =>
+  silenceEvent(event) ? fn(...args) : fn(event, ...args)
+const silenceEvent = (event: any) => {
+  const is = isEvent(event)
+  if (is) {
+    event.preventDefault()
+  }
+  return is
+}
 export default Pickers
